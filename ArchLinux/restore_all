@@ -4,6 +4,9 @@
 # Installation #
 ################
 
+echo "Are you sure?"
+read startt
+
 sh scripts/install
 
 ############
@@ -17,6 +20,10 @@ pacman -S $(cat pkglist.txt)
 # Oh-My-Zsh
 su albert
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# PIP
+
+pip install -r configurations/requirements.txt
 
 # YAY
 git clone https://aur.archlinux.org/yay.git

@@ -103,3 +103,13 @@ function rmexif()
 	rm $1_original
 }
 
+function pip-upload()
+{
+
+	python setup.py sdist
+	twine upload dist/*
+
+	echo "Deleting dist/ ..."
+	rm -rf dist *.egg-info
+}
+

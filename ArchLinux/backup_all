@@ -23,5 +23,8 @@ cp ~/.config/ranger/rc.conf 	configurations/ranger
 echo "Getting packages..."
 pacman -Qqen > pkglist.txt
 
+echo "Getting Python packages..."
+pip freeze > configurations/requirements.txt
+
 echo "DONE"
 
