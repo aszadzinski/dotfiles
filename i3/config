@@ -173,15 +173,16 @@ bindsym Escape mode "default"
 }
 
 
-
 bindsym $mod+r mode "resize"
-bindsym $mod+Shift+p exec logout
+bindsym $mod+Shift+p exec poweroff
 bindsym $mod+Shift+m exec i3lock-fancy
 bindsym $mod+Ctrl+m exec i3lock-fancy-dualmonitor
 bindsym $mod+Shift+s exec scrot
 bindsym XF86AudioRaiseVolume exec amixer set Master -q 5%+
 bindsym XF86AudioLowerVolume exec amixer set Master -q 5%-
 bindsym XF86AudioMute exec amixer -q set Master toggle
+bindsym $mod+Shift+f exec firefox
+bindsym $mod+Ctrl+f exec firefox --private-window
 
 exec_always nm-applet
 exec_always dropbox
@@ -192,6 +193,9 @@ exec_always xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --o
 exec_always redshift -l 55.7:12.6 -t 6500:4300
 exec_always xinput set-prop 15 389 1
 exec_always xinput set-prop 15 307 1
+exec_always xautolock -time 20 -locker "i3lock-fancy-dualmonitor"
+
 
 #delete headers
 for_window [class="^.*"] border pixel 1
+
