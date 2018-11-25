@@ -8,7 +8,6 @@
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -65,7 +64,7 @@ ZSH_THEME="robbyrussell"
 plugins=(
   git
 )
-ZSH_THEME="bureau"
+ZSH_THEME="wezm"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,3 +96,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
+
+xset b off
+
+alias plaspell="aspell -c -t --lang=pl"
+alias exif="exiftool -all="
+alias ..="cd .."
+alias ...="cd ../.."
+alias c="xclip"
+alias v="xclip -o"
+
+alias tor-opera="opera --proxy-server="socks://192.168.0.12:9100""
+
