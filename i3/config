@@ -187,10 +187,11 @@ bindsym $mod+Shift+f exec firefox
 bindsym $mod+Ctrl+f exec firefox --private-window
 
 exec_always nm-applet
+exec_always syncthing
 exec_always dropbox
 exec_always compton
-exec_always feh --bg-scale Dropbox/Documents/wallpaper/flc.png
-exec_always xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off --output eDP1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal
+exec_always feh --bg-fill Dropbox/Documents/wallpaper/flc.png
+exec_always xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate right --output VIRTUAL1 --off --output eDP1 --primary --mode 1920x1080 --pos 1080x368 --rotate normal
 
 exec_always redshift -l 55.7:12.6 -t 6500:4300
 exec_always xinput set-prop 15 389 1
