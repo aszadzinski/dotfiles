@@ -48,16 +48,16 @@ bindsym $mod+space focus mode_toggle
 
 bindsym $mod+a focus parent
 
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws1 ""
+set $ws2 ""
+set $ws3 ""
+set $ws4 ""
+set $ws5 ""
+set $ws6 ""
+set $ws7 ""
+set $ws8 ""
+set $ws9 ""
+set $ws10 ""
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -196,7 +196,7 @@ exec_always xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate right --ou
 exec_always redshift -l 55.7:12.6 -t 6500:4300
 exec_always xinput set-prop 15 389 1
 exec_always xinput set-prop 15 307 1
-exec_always xautolock -time 20 -locker "i3lock-fancy-dualmonitor"
+exec_always xautolock -time 21 -locker "i3lock-fancy-dualmonitor -g"
 
 
 #delete headers
