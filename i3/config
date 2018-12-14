@@ -176,7 +176,7 @@ bindsym Escape mode "default"
 bindsym $mod+r mode "resize"
 bindsym $mod+Shift+p exec poweroff
 bindsym $mod+Shift+m exec i3lock-fancy
-bindsym $mod+Ctrl+m exec i3lock-fancy-dualmonitor
+bindsym $mod+Ctrl+m exec i3lock-fancy-dualmonitor -g
 bindsym $mod+Shift+s exec scrot
 bindsym XF86AudioRaiseVolume exec amixer set Master -q 5%+
 bindsym XF86AudioLowerVolume exec amixer set Master -q 5%-
@@ -187,7 +187,7 @@ bindsym $mod+Shift+f exec firefox
 bindsym $mod+Ctrl+f exec firefox --private-window
 
 exec_always nm-applet
-exec_always syncthing
+exec_always syncthing --no-browser
 exec_always dropbox
 exec_always compton
 exec_always feh --bg-fill Dropbox/Documents/wallpaper/flc.png
