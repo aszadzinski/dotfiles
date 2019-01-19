@@ -131,6 +131,7 @@ separator           $hi
 }
 
 set $bg-color 	         #2f343f
+set $bg-colorr		 #717171
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
@@ -138,15 +139,15 @@ set $urgent-bg-color     #E53935
 
 # window colors
 #                       border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          #00ff00
+client.focused          $bg-color          $bg-colorr          $text-color          #00ff00
 client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
 client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
 client.urgent $urgent-bg-color $urgent-bg-color $text-color #00ff00
 #==========================================================================================================
 ## gaps ##
 
-gaps inner 8
-gaps outer 5
+gaps inner 14
+gaps outer 0
 
 # no gaps with only one window
 smart_gaps on
@@ -176,7 +177,7 @@ bindsym Escape mode "default"
 bindsym $mod+r mode "resize"
 bindsym $mod+Shift+p exec poweroff
 bindsym $mod+Shift+m exec i3lock-fancy
-bindsym $mod+Ctrl+m exec i3lock-fancy-dualmonitor -g
+bindsym $mod+Ctrl+m exec i3lock-fancy-dualmonitor
 bindsym $mod+Shift+s exec scrot
 bindsym XF86AudioRaiseVolume exec amixer set Master -q 5%+
 bindsym XF86AudioLowerVolume exec amixer set Master -q 5%-
@@ -189,9 +190,9 @@ bindsym $mod+Ctrl+f exec firefox --private-window
 exec_always nm-applet
 exec_always syncthing --no-browser
 exec_always dropbox
-exec_always compton
-exec_always feh --bg-fill Dropbox/Documents/wallpaper/flc.png
-exec_always xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate right --output VIRTUAL1 --off --output eDP1 --primary --mode 1920x1080 --pos 1080x368 --rotate normal
+exec_always compton --config ~/.config/compton.conf
+exec_always feh --bg-center ~/.config/i3/wallpaper/flcl.png
+exec_always xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off --output eDP1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal
 
 exec_always redshift -l 55.7:12.6 -t 6500:4300
 exec_always xinput set-prop 15 389 1

@@ -107,6 +107,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias c="xclip"
 alias v="xclip -o"
+alias ls="ls -a"
 
 alias gst="git status"
 alias ga="git add -A"
