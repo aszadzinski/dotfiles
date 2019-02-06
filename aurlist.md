@@ -1,0 +1,9 @@
+android-sdk-platform-tools 
+cava 
+i3lock-blur 
+i3lock-fancy-dualmonitors-git 
+i3lock-fancy-git 
+j4-dmenu-desktop 
+lcms 
+lnav 
+signal-desktop-bin 
