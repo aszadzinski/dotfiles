@@ -98,6 +98,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
+export EDITOR=vim
 
 xset b off
 

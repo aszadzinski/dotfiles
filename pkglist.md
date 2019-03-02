@@ -20,6 +20,7 @@ beep
 bind-tools
 bison
 boost
+curl
 cmake
 cmatrix
 compton
