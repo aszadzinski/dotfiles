@@ -26,6 +26,7 @@ cmatrix
 compton
 cppo
 cryfs
+docker
 doge
 dropbox
 exfat-utils
