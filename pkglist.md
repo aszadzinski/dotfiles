@@ -16,6 +16,7 @@ automake
 autopep8
 awesome-terminal-fonts
 b43-fwcutter
+baobab
 beep
 bind-tools
 bison
