@@ -118,4 +118,5 @@ alias gf="git fetch"
 alias gp="git push"
 
 alias tor-opera="opera --proxy-server="socks://192.168.0.12:9100""
-
+ 
+alias ls="ls -l"
