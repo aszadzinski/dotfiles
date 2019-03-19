@@ -1,0 +1,11 @@
+'body':
+  'ctrl-b "': 'pane:split-down-and-copy-active-item'
+  'ctrl-shift-3': 'fuzzy-finder:toggle-file-finder'
+  'ctrl-t': 'platformio-ide-terminal:toggle'
+  'ctrl-b %': 'pane:split-right-and-copy-active-item'
+  'ctrl-b down': 'window:focus-pane-below'
+  'ctrl-b up': 'window:focus-pane-above'
+  'ctrl-b left': 'window:focus-pane-on-left'
+  'ctrl-b right': 'window:focus-pane-on-right'
+'.platform-linux':
+  'ctrl-B': 'fuzzy-finder:toggle-buffer-finder'

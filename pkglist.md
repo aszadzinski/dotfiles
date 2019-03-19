@@ -110,3 +110,4 @@ xf86-video-ati
 xf86-video-intel
 yay
 zsh
+qtcreator

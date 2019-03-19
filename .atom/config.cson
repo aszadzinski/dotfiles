@@ -1,0 +1,33 @@
+"*":
+  "autocomplete-plus":
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
+  core:
+    automaticallyUpdate: false
+    disabledPackages: [
+      "fold-lines"
+    ]
+    openEmptyEditorOnStart: false
+    projectHome: "/home/albert/Scripts"
+    restorePreviousWindowsOnStart: "no"
+    telemetryConsent: "no"
+  editor:
+    scrollPastEnd: true
+  "exception-reporting":
+    userId: "d6fdae37-4985-492c-ba60-745f141da06a"
+  "julia-client":
+    firstBoot: false
+    uiOptions:
+      enableMenu: true
+      enableToolBar: true
+  "platformio-ide-terminal":
+    ansiColors:
+      normal:
+        black: "#202333"
+    style:
+      theme: "solarized-dark"
+  "tool-bar":
+    position: "Left"
+  "uber-juno":
+    disable: true
+  welcome:
+    showOnStartup: false
