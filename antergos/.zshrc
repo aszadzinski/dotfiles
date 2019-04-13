@@ -108,7 +108,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias c="xclip"
 alias v="xclip -o"
-alias ls="ls -a"
+alias ls="ls -a --color=auto"
 
 alias gst="git status"
 alias ga="git add -A"
@@ -118,5 +118,4 @@ alias gf="git fetch"
 alias gp="git push"
 
 alias tor-opera="opera --proxy-server="socks://192.168.0.12:9100""
- 
-alias ls="ls -l"
+
