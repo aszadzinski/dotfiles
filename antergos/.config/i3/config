@@ -200,6 +200,10 @@ exec xinput set-prop 15 389 1
 exec xinput set-prop 15 307 1
 exec xautolock -time 21 -locker "i3lock-fancy-dualmonitor -g"
 
+# Wacom tablet config
+
+exec_always xsetwacom set "Wacom Intuos BT S Pen stylus"  MapToOutput eDP1 
+
 #starting scripts
 #exec_always i3-msg 'workspace $ws1; exec terminator -x  ~/.config/i3/start_script'
 
