@@ -52,6 +52,7 @@ ipw2200-fw
 ipython
 jfsutils
 julia
+krita
 libreoffice-fresh-pl
 licenses
 lxappearance
