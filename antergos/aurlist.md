@@ -1,9 +1,14 @@
-android-sdk-platform-tools 
-cava 
-i3lock-blur 
-i3lock-fancy-dualmonitors-git 
-i3lock-fancy-git 
-j4-dmenu-desktop 
-lcms 
-lnav 
-signal-desktop-bin 
+android-sdk-platform-tools 28.0.2-1
+cava 0.6.1-1
+gamin 0.1.10-9
+i3lock-blur 2.10-3
+i3lock-fancy-dualmonitors-git r91.f85e364-1
+i3lock-fancy-git r168.f2e9bdd-1
+idnkit 2.3-2
+j4-dmenu-desktop 2.17-1
+lcms 1.19-7
+libnm-gtk 1.8.19dev+21+geebf7f95-1
+lnav 0.8.4-1
+qt4 4.8.7-28
+signal-desktop-bin 1.24.1-4
+wpa_actiond 1.4-4
