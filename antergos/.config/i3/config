@@ -189,8 +189,8 @@ bindsym $mod+Ctrl+f exec firefox --private-window
 
 exec nm-applet
 exec syncthing --no-browser
-exec dropbox
-exec nextcloud
+#exec dropbox
+#exec nextcloud
 exec compton --config ~/.config/compton.conf
 exec feh --bg-center ~/.config/i3/wallpaper/flcl.png
 exec xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off --output eDP1 --primary --mode 1920x1080 --pos 1920x0 --rotate normal
@@ -199,6 +199,9 @@ exec redshift -l 55.7:12.6 -t 6500:4300
 exec xinput set-prop 15 389 1
 exec xinput set-prop 15 307 1
 exec xautolock -time 21 -locker "i3lock-fancy-dualmonitor -g"
+
+# Security
+exec macc -r 
 
 # Wacom tablet config
 
