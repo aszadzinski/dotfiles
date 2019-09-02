@@ -35,6 +35,7 @@ dmenu
 dmidecode
 dmraid
 dosfstools
+doxygen
 efibootmgr
 exfat-utils
 f2fs-tools
@@ -121,9 +122,13 @@ proxychains-ng
 pulseaudio
 pulseaudio-equalizer
 pulseaudio-jack
+python-cryptography
+python-matplotlib
 python-numpy
 python-pip
+python-scipy
 python-virtualenv
+qjackctl
 ranger
 redshift
 reflector
@@ -132,6 +137,7 @@ ristretto
 rsync
 scrot
 signal-desktop
+simplescreenrecorder
 speedtest-cli
 sqlitebrowser
 sshfs
@@ -142,8 +148,14 @@ sysfsutils
 terminator
 terminus-font
 texinfo
+texlive-bibtexextra
 texlive-core
+texlive-fontsextra
+texlive-formatsextra
 texlive-latexextra
+texlive-pictures
+texlive-science
+texmaker
 thunar
 tigervnc
 tk
@@ -181,6 +193,7 @@ xf86-input-wacom
 xf86-video-ati
 xf86-video-intel
 xf86-video-vesa
+xfce4-terminal
 xfsprogs
 xorg-bdftopcf
 xorg-docs
@@ -196,7 +209,6 @@ xorg-server-devel
 xorg-server-xephyr
 xorg-server-xnest
 xorg-server-xvfb
-xorg-server-xwayland
 xorg-sessreg
 xorg-setxkbmap
 xorg-smproxy
@@ -226,6 +238,7 @@ xorg-xrefresh
 xorg-xset
 xorg-xsetroot
 xorg-xvinfo
+xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud

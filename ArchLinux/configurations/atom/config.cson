@@ -14,7 +14,7 @@
     projectHome: "~/Projects"
     telemetryConsent: "no"
   editor:
-    fontSize: 16
+    fontSize: 15
     lineHeight: 1.4
     showIndentGuide: true
     showInvisibles: true

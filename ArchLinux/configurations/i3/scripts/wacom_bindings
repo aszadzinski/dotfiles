@@ -10,6 +10,14 @@ elif [ $1 == "--default" ]; then
 	echo "default"
 	xsetwacom set "Wacom Intuos BT S Pad pad" Button 2 9 								#next button
 	xsetwacom set "Wacom Intuos BT S Pad pad" Button 1 8 								#back button
-	xsetwacom set "Wacom Intuos BT S Pad pad" Button 3 "key up up up up up +up" 					#upx6
-	xsetwacom set "Wacom Intuos BT S Pad pad" Button 8 "key down down down down down +down" 				#downx6
+	xsetwacom set "Wacom Intuos BT S Pad pad" Button 3 "key +super f1"						#switch screen 1
+	xsetwacom set "Wacom Intuos BT S Pad pad" Button 8 "key +super f2"						#switch screen 2
+
 fi
+#elif [ $1 == "--default" ]; then
+#	echo "default"
+#	xsetwacom set "Wacom Intuos BT S Pad pad" Button 2 9 								#next button
+#	xsetwacom set "Wacom Intuos BT S Pad pad" Button 1 8 								#back button
+#	xsetwacom set "Wacom Intuos BT S Pad pad" Button 3 "key up up up up up +up" 					#upx6
+#	xsetwacom set "Wacom Intuos BT S Pad pad" Button 8 "key down down down down down +down" 				#downx6
+#fi
