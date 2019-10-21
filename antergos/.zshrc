@@ -117,5 +117,12 @@ alias gpl="git pull"
 alias gf="git fetch"
 alias gp="git push"
 
+alias macc="~/.local/bin/macc"
+
 alias tor-opera="opera --proxy-server="socks://192.168.0.12:9100""
 
+alias pdflatex="pdflatex --interaction nonstopmode"
+
+
+pad="`xsetwacom --list devices | grep 'type: PAD' | \
+  sed 's/.*id: \([0-9][0-9]*\).*/\1/'`"
