@@ -205,6 +205,13 @@ exec macc -r
 
 # Wacom tablet config
 
+
+bindsym $mod+F1 exec xsetwacom set "Wacom Intuos BT S Pen stylus"  MapToOutput HDMI1
+bindsym $mod+F2 exec xsetwacom set "Wacom Intuos BT S Pen stylus"  MapToOutput eDP1
+exec xsetwacom set "Wacom Intuos BT S Pad pad" Button 2 9 # next button
+exec xsetwacom set "Wacom Intuos BT S Pad pad" Button 1 8 # back button
+exec xsetwacom set "Wacom Intuos BT S Pad pad" Button 3 "key PgUp" # back button
+exec xsetwacom set "Wacom Intuos BT S Pad pad" Button 8 "key PgDn" # back button
 exec_always xsetwacom set "Wacom Intuos BT S Pen stylus"  MapToOutput eDP1 
 
 #starting scripts
