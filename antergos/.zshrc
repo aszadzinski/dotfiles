@@ -11,7 +11,7 @@ plugins=(
 # Configuration #
 #################
 
-ZSH_THEME="wezm"
+ZSH_THEME="bira"
 source $ZSH/oh-my-zsh.sh
 export EDITOR=vim
 xset b off
@@ -65,6 +65,21 @@ function tomp4()
 {
 	name=`echo "$1" | awk -F"." '{print $1}'`
 	ffmpeg -i $1 $name.mp4
+}
+
+function ggit()
+{
+	git status
+	git add --all
+	sleep 3
+	if [ $1 = "-S" ] 
+	then
+		echo "1"
+		git commit -S -m "$2"
+	else
+		echo "2"
+		git commit -m "$1"
+	fi
 }
 
 function rmexif()
