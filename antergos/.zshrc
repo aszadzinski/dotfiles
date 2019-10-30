@@ -78,7 +78,7 @@ function ggit()
 		git commit -S -m "$2"
 	else
 		echo "2"
-		git commit -m "$1"
+		git commit --no-gpg-sign -m "$1"
 	fi
 }
 

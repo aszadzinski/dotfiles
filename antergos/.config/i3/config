@@ -171,8 +171,7 @@ bindsym Escape mode "default"
 
 bindsym $mod+r mode "resize"
 bindsym $mod+Shift+p exec poweroff
-bindsym $mod+Shift+m exec i3lock-fancy
-bindsym $mod+Ctrl+m exec i3lock-fancy-dualmonitor
+bindsym $mod+Ctrl+m exec ~/.config/i3/scripts/lock
 
 bindsym Print exec scrot  -e 'mv $f ~/Pictures/'
 bindsym $mod+Print exec xfce4-screenshooter -r
@@ -203,7 +202,7 @@ exec redshift -l 55.7:12.6 -t 6500:4300
 exec xinput set-prop 15 389 1
 exec xinput set-prop 15 307 1
 
-exec xautolock -time 21 -locker "i3lock-fancy-dualmonitor -g"
+exec xautolock -time 21 -locker ~/.config/i3/scripts/lock
 
 # Security
 exec macc -r 
