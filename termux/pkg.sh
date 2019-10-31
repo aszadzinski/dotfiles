@@ -12,7 +12,7 @@ rm pointless.gpg
 
 #instaling deps
 pkg update
-pkg install termux-api python  p7zip nmap net-tools make man htop gzip grep git curl cmake openssh vim neofetch tar  julia fftw  libpng  pkg-config ranger tracepath  -y
+pkg install termux-api python  p7zip nmap net-tools make man htop gzip grep git curl cmake openssh vim neofetch tar  julia fftw  libpng  pkg-config ranger tracepath  dnsutils -y
 
 #python modules *may take a long time (+10min)*
 #LDFLAGS="-lzmq" pip3 install jupyter 
