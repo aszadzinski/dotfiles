@@ -1,8 +1,60 @@
 #!/bin/bash
 
+################
+# Installation #
+################
+
+sh scripts/install
+
+############
+# Packages #
+############
+
+# Install packages
+cd /tmp
+pacman -S $(cat pkglist.md)
+pacman -S $(cat additional.md)
+
+# Oh-My-Zsh
+su albert
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# YAY
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+rm -rf yay
+
+# Install AUR
+yay -S $(cat aur.md)
+
+# create folders
+cd /home/albert
+mkdir Documents
+mkdir Downloads
+mkdir Videos
+mkdir Musics
+mkdir Projects
+mkdir Pictures
+mkdir oandbackups
+mkdir Camera
+
+# Copy Configurations
+cp configurations/.zshrc ~/
+cp configurations/compton.conf ~/.config/
+cp -r configurations/i3 ~/.config/
+cp -r configurations/ranger ~/.config/
+cp -r configurations/terminator ~/.config/
+cp -r configurations/i3status ~/.config/
+
+exit
+cp configurations/vimrc /etc/
+
+
 
 ##############
 ## PROJECTS ##
 ##############
 
-sh scripts/Projects
+#sh scripts/Projects
