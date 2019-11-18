@@ -42,6 +42,7 @@ mkdir Camera
 
 # Copy Configurations
 cp configurations/.zshrc ~/
+cp configurations/tmux.conf ~/.tmux.conf
 cp configurations/compton.conf ~/.config/
 cp -r configurations/i3 ~/.config/
 cp -r configurations/ranger ~/.config/
