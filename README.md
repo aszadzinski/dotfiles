@@ -2,4 +2,4 @@
 
 **i3-gaps config**
 
-![screenshot](screenshots/sc190119.png)
+![screenshot](screenshots/sc181119.png)

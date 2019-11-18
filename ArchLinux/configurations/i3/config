@@ -228,7 +228,7 @@ exec syncthing --no-browser
 
 exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 2025x0 --rotate normal --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
 exec compton --config ~/.config/compton.conf
-exec feh --bg-center ~/.config/i3/wallpaper/flcl.png
+exec feh --bg-center ~/.config/i3/wallpaper/a1.png
 
 exec redshift -l 55.7:12.6 -t 6500:4300
 exec xinput set-prop 15 389 1
