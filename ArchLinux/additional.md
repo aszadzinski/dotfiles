@@ -3,6 +3,7 @@ gimp
 keepassxc
 libreoffice-fresh-sdk
 syncthing
+transmission-gtk
 texlive-bibtexextra
 texlive-bin
 texlive-core
