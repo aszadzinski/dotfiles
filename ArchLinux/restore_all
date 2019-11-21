@@ -39,6 +39,7 @@ mkdir Projects
 mkdir Pictures
 mkdir oandbackups
 mkdir Camera
+xdg-user-dirs-update
 
 # Copy Configurations
 cp configurations/.zshrc ~/
