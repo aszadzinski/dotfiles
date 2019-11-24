@@ -4,6 +4,7 @@ adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
 aircrack-ng
 alsa-utils
+antiword
 arandr
 arc-gtk-theme
 aspell-en
@@ -33,13 +34,11 @@ exfat-utils
 f2fs-tools
 feh
 firefox
-#flashplugin
 gcc-libs
 gdb
 geany
 git
 glibc
-#graphviz
 grub
 gtop
 gzip
@@ -75,7 +74,6 @@ mtr
 nano
 neofetch
 net-tools
-#netctl
 networkmanager
 networkmanager-openvpn
 network-manager-applet
@@ -83,7 +81,7 @@ nfs-utils
 nilfs-utils
 nmap
 ntfs-3g
-#openmpi
+odt2txt
 openssh
 okular
 os-prober
@@ -100,8 +98,6 @@ python-pip
 ranger
 redshift
 reflector
-#reiserfsprogs
-#s-nail
 scrot
 sshfs
 stress
@@ -114,7 +110,6 @@ tmux
 traceroute
 tree
 ttf-font-awesome
-#uncrustify
 unrar
 unzip
 usb_modeswitch
