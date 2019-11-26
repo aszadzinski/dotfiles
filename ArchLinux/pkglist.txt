@@ -110,6 +110,7 @@ tmux
 traceroute
 tree
 ttf-font-awesome
+tumbler
 unrar
 unzip
 usb_modeswitch
