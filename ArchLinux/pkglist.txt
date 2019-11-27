@@ -98,6 +98,7 @@ python-pip
 ranger
 redshift
 reflector
+ristretto
 scrot
 sshfs
 stress
