@@ -41,6 +41,7 @@ git
 glibc
 grub
 gtop
+gvfs
 gzip
 haveged
 htop
