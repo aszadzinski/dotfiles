@@ -104,6 +104,7 @@ ristretto
 scrot
 sshfs
 stress
+sqlite
 sysfsutils
 terminator
 terminus-font
