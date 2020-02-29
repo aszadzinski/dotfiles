@@ -13,7 +13,6 @@ sh scripts/install
 # Install packages
 cd /tmp
 pacman -S $(cat pkglist.txt)
-pacman -S $(cat additional.txt)
 
 # Oh-My-Zsh
 su albert
@@ -34,7 +33,7 @@ cd /home/albert
 mkdir Documents
 mkdir Downloads
 mkdir Videos
-mkdir Musics
+mkdir Music
 mkdir Projects
 mkdir Pictures
 mkdir oandbackups
@@ -42,16 +41,17 @@ mkdir Camera
 xdg-user-dirs-update
 
 # Copy Configurations
-cp configurations/.zshrc ~/
-cp configurations/tmux.conf ~/.tmux.conf
-cp configurations/compton.conf ~/.config/
-cp -r configurations/i3 ~/.config/
-cp -r configurations/ranger ~/.config/
-cp -r configurations/terminator ~/.config/
-cp -r configurations/i3status ~/.config/
+cp configurations/.zshrc 	~/
+cp configurations/tmux.conf 	~/.tmux.conf
+cp configurations/compton.conf 	~/.config/
+cp -r configurations/i3 	~/.config/
+cp -r configurations/ranger 	~/.config/
+cp -r configurations/terminator	~/.config/
+cp -r configurations/i3status 	~/.config/
+cp -r configurations/atom/* 	~/.atom/
 
 exit
-cp configurations/vimrc /etc/
+cp configurations/vimrc 	/etc/
 
 
 

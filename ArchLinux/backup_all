@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cp -r ~/.config/i3/*		configurations/i3
+cp -r ~/.config/i3status/* 	configurations/i3status
+cp -r ~/.config/terminator/*	configurations/terminator
+#ATOM
+cp ~/.atom/config.cson		configurations/atom
+cp ~/.atom/keymap.cson 		configurations/atom
+cp ~/.atom/snippets.cson	configurations/atom
+
+cp ~/.tmux.conf			configurations/tmux.conf
+cp ~/.zshrc			configurations/.zshrc
+cp ~/.config/compton.conf	configurations/compton.conf
+cp ~/.config/ranger/rc.conf 	configurations/ranger
+

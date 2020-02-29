@@ -220,6 +220,7 @@ bindsym $mod+Ctrl+f exec firefox --private-window
 ### EXECUTING ###
 #################
 
+exec localedef -i en_US -f UTF-8 en_US.UTF-8
 exec nm-applet
 exec syncthing --no-browser
 #exec dropbox
