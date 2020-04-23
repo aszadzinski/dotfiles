@@ -1,15 +1,27 @@
 #!/bin/bash
 
+
+echo "Copying configuration files..."
+echo "-- i3"
 cp -r ~/.config/i3/*		configurations/i3
 cp -r ~/.config/i3status/* 	configurations/i3status
+echo "-- terminator"
 cp -r ~/.config/terminator/*	configurations/terminator
-#ATOM
+echo "-- atom"
 cp ~/.atom/config.cson		configurations/atom
 cp ~/.atom/keymap.cson 		configurations/atom
 cp ~/.atom/snippets.cson	configurations/atom
-
+echo "-- tmux"
 cp ~/.tmux.conf			configurations/tmux.conf
+echo "-- zsh"
 cp ~/.zshrc			configurations/.zshrc
+echo "-- compton"
 cp ~/.config/compton.conf	configurations/compton.conf
+echo "-- ranger"
 cp ~/.config/ranger/rc.conf 	configurations/ranger
+
+echo "Getting packages..."
+pacman -Qqen > pkglist.txt
+
+echo "DONE"
 

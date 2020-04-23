@@ -31,6 +31,8 @@ pad="`xsetwacom --list devices | grep 'type: PAD' | \
 alias plaspell="aspell -c -t --lang=pl"
 alias pdflatex="pdflatex --interaction nonstopmode"
 alias vimr="vim -R"
+alias c="xclip"
+alias v="xclip -o"
 
 # GIT shortcuts
 alias gst="git status"
@@ -42,7 +44,6 @@ alias gp="git push"
 
 # Local programs
 alias macc="~/.local/bin/macc"
-alias tor-opera="opera --proxy-server="socks://192.168.0.12:9100""
 
 # Multimedia
 alias exif="exiftool -all="
@@ -50,22 +51,24 @@ alias exif="exiftool -all="
 # Net
 alias myip="curl http://ipecho.net/plain; echo"
 
+# Package management
+alias pacman_unused="pacman -Qtdq"
+
 # Others
 alias ..="cd .."
 alias ...="cd ../.."
-alias c="xclip"
-alias v="xclip -o"
 alias ls="ls -a --color=auto"
+
+# YT
+alias yt_mp3="youtube-dl  --extract-audio --audio-format mp3 --audio-quality 0 -f bestaudio "
+alias yt_mp4="youtube-dl  -f mp4 "
+
+# Tmux
+alias tmux_return="tmux attach-session"
 
 #############
 # Functions #
 #############
-
-function tomp4() 
-{
-	name=`echo "$1" | awk -F"." '{print $1}'`
-	ffmpeg -i $1 $name.mp4
-}
 
 function ggit()
 {
