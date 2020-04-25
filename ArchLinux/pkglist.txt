@@ -110,6 +110,7 @@ perl-image-exiftool
 picom
 pkgconf
 pkgfile
+playerctl
 powerline-fonts
 proxychains-ng
 pulseaudio

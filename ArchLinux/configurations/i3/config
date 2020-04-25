@@ -121,7 +121,8 @@ mode "$toggle_gaps" {
 bar {
 	position top
 	height 26
-	status_command i3status -c ~/.config/i3/i3status.conf
+	#status_command i3status -c ~/.config/i3/i3status.conf
+	status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	colors {
 		background          $bg-color
 		statusline          $fg

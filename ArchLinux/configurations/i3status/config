@@ -9,7 +9,7 @@
 ###############################################################################
 
 general {
-    interval = 1
+    interval = 5
     colors = true
     color_good = '#88b090'
     color_degraded = '#ccdc90'
@@ -19,14 +19,15 @@ general {
 order += "volume master"
 order += "disk /"
 order += "disk /data"
-#order += "disk /home"
-#order += "run_watch DHCP"
+order += "disk /home"
+order += "run_watch DHCP"
 #order += "ipv6"
 #order += "run_watch VPN"
 #order += "wireless wlp4s0"
-order += "ethernet enp5s0"
+#order += "ethernet enp5s0"
 #order += "battery 0"
 order += "cpu_temperature 0"
+order += "cpu_temperature 1"
 order += "cpu_usage 0"
 order += "load"
 order += "tztime local"
@@ -73,11 +74,17 @@ load {
 }
 
 cpu_usage {
-    format = " %usage"
+    format = " %usage (%cpu1|%cpu0|%cpu3|%cpu2)"
 }
 
 cpu_temperature 0 {
 	format = " %degrees°C"
+	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon6/temp2_input"
+}
+
+cpu_temperature 1 {
+	format = " %degrees°C"
+	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon6/temp3_input"
 }
 
 disk "/" {
