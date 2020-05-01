@@ -22,6 +22,8 @@ xset b off
 
 pad="`xsetwacom --list devices | grep 'type: PAD' | \
   sed 's/.*id: \([0-9][0-9]*\).*/\1/'`"
+source ~/Programs/root-6.20.04/build/bin/thisroot.sh
+
 
 ###########
 # ALIASES #
@@ -83,6 +85,16 @@ function ggit()
 		echo "2"
 		git commit --no-gpg-sign -m "$1"
 	fi
+}
+
+function cvim()
+{
+	realpath $1 | xclip
+}
+
+function vvim()
+{
+	vim $(xclip -o)
 }
 
 function rmexif()
