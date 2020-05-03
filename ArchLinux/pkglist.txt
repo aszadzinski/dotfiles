@@ -137,6 +137,7 @@ terminator
 terminus-font
 texinfo
 texlive-core
+texlive-latexextra
 thunar
 tk
 tmux

@@ -8,6 +8,9 @@
   core:
     autoHideMenuBar: true
     automaticallyUpdate: false
+    disabledPackages: [
+      "vim-mode-plus"
+    ]
     projectHome: "~/Projects"
     telemetryConsent: "no"
   editor:
