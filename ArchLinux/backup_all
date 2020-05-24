@@ -24,7 +24,7 @@ echo "Getting packages..."
 pacman -Qqen > pkglist.txt
 
 echo "Getting Python packages..."
-pip freeze > configurations/requirements.txt
+pip-chill --no-version > configurations/requirements.txt
 
 echo "DONE"
 

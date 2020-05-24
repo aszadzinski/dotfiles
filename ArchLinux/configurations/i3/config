@@ -177,6 +177,8 @@ bindsym $mod+Ctrl+f exec firefox --private-window
 #################
 #################
 
+exec virtualenv /tmp/venv 
+
 #################
 ### processes ###
 #################

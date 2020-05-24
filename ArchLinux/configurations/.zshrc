@@ -20,6 +20,7 @@ xset b off
 # Variables #
 #############
 
+export PATH=$PATH:$HOME/.local/bin
 pad="`xsetwacom --list devices | grep 'type: PAD' | \
   sed 's/.*id: \([0-9][0-9]*\).*/\1/'`"
 source ~/Programs/root-6.20.04/build/bin/thisroot.sh
@@ -60,6 +61,7 @@ alias pacman_unused="pacman -Qtdq"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ls="ls -a --color=auto"
+alias venv="source /tmp/venv/bin/activate"
 
 # YT
 alias yt_mp3="youtube-dl  --extract-audio --audio-format mp3 --audio-quality 0 -f bestaudio "
@@ -113,3 +115,42 @@ function pip-upload()
 	rm -rf dist *.egg-info
 }
 
+function markdown-gen()
+{
+	if [ $1 = "-h" ] 
+	then
+		echo "markdown-gen <name> <version>"
+		echo "optional -k: stop after deleting files"
+	else
+		deactivate
+		virtualenv sphinx-venv
+		source sphinx-venv/bin/activate
+		pip install sphinx
+		pip install sphinx-markdown-builder
+		pip install -r requirements.txt
+		python setup.py install
+		sphinx-apidoc -o _docs . sphinx-apidoc --full -A 'Albert Szadziński' -H $1 -V $2
+		cd _docs
+echo "
+import os
+import sys
+sys.path.insert(0,os.path.abspath('../'))
+def skip(app, what, name, obj,would_skip, options):
+    if name in ( '__init__',): return False
+    return would_skip
+def setup(app): app.connect('autodoc-skip-member', skip)
+" >> conf.py;
+		make markdown
+		cd ..
+		if [ $3 = "-k" ]
+		then
+			echo "paused..."
+		else
+			deactivate
+			mv _docs/_build/markdown docs
+			rm -rf _docs sphinx-venv
+			echo "Done"
+		fi
+
+	fi
+}
