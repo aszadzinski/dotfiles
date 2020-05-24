@@ -1,0 +1,19 @@
+#!/bin/bash
+
+
+echo "Copying configuration files..."
+echo "-- terminator"
+cp -r ~/.config/terminator/*	configurations/terminator
+echo "-- atom"
+cp ~/.atom/config.cson		configurations/atom
+cp ~/.atom/keymap.cson 		configurations/atom
+cp ~/.atom/snippets.cson	configurations/atom
+echo "-- tmux"
+cp ~/.tmux.conf			configurations/tmux.conf
+echo "-- zsh"
+cp ~/.zshrc			configurations/.zshrc
+echo "-- ranger"
+cp ~/.config/ranger/rc.conf 	configurations/ranger
+
+echo "DONE"
+

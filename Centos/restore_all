@@ -1,0 +1,30 @@
+#!/bin/bash
+
+################
+# Installation #
+################
+
+echo "Are you sure?"
+read startt
+
+
+############
+# Packages #
+############
+
+
+# Copy Configurations
+cp configurations/.zshrc 	~/
+cp configurations/tmux.conf 	~/.tmux.conf
+cp -r configurations/ranger 	~/.config/
+cp -r configurations/terminator	~/.config/
+cp -r configurations/atom/* 	~/.atom/
+
+
+
+
+##############
+## PROJECTS ##
+##############
+
+#sh scripts/Projects
