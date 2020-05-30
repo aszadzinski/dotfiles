@@ -46,7 +46,6 @@ sip
 speedtest-cli
 team
 terminator
-toml
 traitlets
 twine
 virtualenv

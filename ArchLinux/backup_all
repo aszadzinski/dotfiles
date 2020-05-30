@@ -19,6 +19,10 @@ echo "-- compton"
 cp ~/.config/compton.conf	configurations/compton.conf
 echo "-- ranger"
 cp ~/.config/ranger/rc.conf 	configurations/ranger
+echo "-- ssh config"
+cp ~/.ssh/config		configurations/ssh_config
+gpg -e -r albert.szadzinski@proton configurations/ssh_config
+rm configurations/ssh_config
 
 echo "Getting packages..."
 pacman -Qqen > pkglist.txt

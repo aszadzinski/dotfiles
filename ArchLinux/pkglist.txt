@@ -60,6 +60,7 @@ imagemagick
 inetutils
 iniparser
 inkscape
+inotify-tools
 intel-ucode
 ipw2100-fw
 ipw2200-fw
@@ -124,6 +125,7 @@ redshift
 reflector
 reiserfsprogs
 ristretto
+rsync
 scrot
 signal-desktop
 speedtest-cli

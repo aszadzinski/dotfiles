@@ -56,6 +56,9 @@ cp -r configurations/ranger 	~/.config/
 cp -r configurations/terminator	~/.config/
 cp -r configurations/i3status 	~/.config/
 cp -r configurations/atom/* 	~/.atom/
+gpg -d configurations/ssh_config.gpg >> tmp
+cp tmp ~/.ssh/config
+rm tmp
 
 exit
 cp configurations/vimrc 	/etc/
