@@ -11,7 +11,7 @@ plugins=(
 # Configuration #
 #################
 
-ZSH_THEME="candy"
+ZSH_THEME="avit"
 source $ZSH/oh-my-zsh.sh
 export EDITOR=vim
 
