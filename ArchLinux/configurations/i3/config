@@ -98,8 +98,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Log out??' -B 'Yes' 'i3-msg 
 
 bindsym $mod+minus        gaps inner all minus 5
 bindsym $mod+plus         gaps inner all plus 5
-bindsym $mod+Shift+minus  gaps outer all minus 5
-bindsym $mod+Shift+plus   gaps outer all plus 5
+#bindsym $mod+Shift+minus  gaps outer all minus 5
+#bindsym $mod+Shift+plus   gaps outer all plus 5
 
 set $toggle_gaps Toggle gaps: (1)OFF (2)SMALL (3)NORMAL (4)HUGE
 bindsym $mod+n mode "$toggle_gaps"
@@ -162,11 +162,15 @@ bindsym $mod+Ctrl+m exec ~/.config/i3/scripts/lock
 
 bindsym Print exec scrot  -e 'mv $f ~/Pictures/Screenshots'
 
+bindsym $mod+Shift+plus  exec amixer set Master -q 5%+
+bindsym $mod+Shift+minus exec amixer set Master -q 5%-
 bindsym XF86AudioRaiseVolume exec amixer set Master -q 5%+
 bindsym XF86AudioLowerVolume exec amixer set Master -q 5%-
 bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym $mod+Ctrl+plus  exec xbacklight -inc 20 # increase screen brightness
+bindsym $mod+Ctrl+minus exec xbacklight -dec 20 # decrease screen brightness
 
 bindsym $mod+Shift+f exec firefox
 bindsym $mod+Ctrl+f exec firefox --private-window
