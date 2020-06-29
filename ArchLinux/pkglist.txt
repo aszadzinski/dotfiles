@@ -51,6 +51,7 @@ grub
 gvfs
 hashcat
 haveged
+hdf5
 htop
 i3-gaps
 i3blocks
@@ -95,11 +96,14 @@ networkmanager-openvpn
 networkmanager-pptp
 nfs-utils
 nilfs-utils
+nload
 nmap
 notification-daemon
 ntfs-3g
 odt2txt
 okular
+opencv
+opencv-samples
 openssh
 os-prober
 otf-font-awesome
@@ -141,6 +145,7 @@ texinfo
 texlive-core
 texlive-latexextra
 thunar
+tigervnc
 tk
 tmux
 traceroute
