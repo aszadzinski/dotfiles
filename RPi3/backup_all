@@ -10,6 +10,8 @@ echo "-- zsh"
 cp ~/.zshrc			configurations/.zshrc
 echo "-- ranger"
 cp ~/.config/ranger/rc.conf 	configurations/ranger
+echo "-- i3"
+cp -r ~/.config/i3/* 		configurations/i3
 
 echo "-- packaged"
 apt list --installed >> packages.txt

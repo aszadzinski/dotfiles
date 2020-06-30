@@ -4,7 +4,7 @@
 #################################
 
 set $mod Mod4
-
+set $alt Mod1
 font pango:monospace 7
 floating_modifier $mod
 
@@ -16,7 +16,9 @@ floating_modifier $mod
 
 bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
+bindsym Escape+t exec terminator
 bindsym $mod+d exec dmenu_run
+bindsym Escape+d exec dmenu_run
 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -43,9 +45,9 @@ bindsym $mod+a focus parent
 ### Workspaces ###
 ##################
 
-set $ws1 ""
-set $ws2 ""
-set $ws3 ""
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
 set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
@@ -147,7 +149,7 @@ bindsym $mod+Ctrl+f exec firefox --private-window
 #################
 #################
 
-#exec virtualenv /tmp/venv 
+exec setxkbmap -option keypad:pointerkeys
 
 #################
 ### processes ###
@@ -162,9 +164,8 @@ bindsym $mod+Ctrl+f exec firefox --private-window
 #exec compton --config ~/.config/compton.conf
 #exec pasystray
 exec_always feh --bg-fill ~/.config/i3/wallpapers/rpi.png
-
+exec_always terminator
 exec xautolock -time 21 -locker ~/.config/i3/scripts/lock
-
 
 #move program to
 #for_window [class="Thunar"] move to workspace $ws2

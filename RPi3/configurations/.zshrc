@@ -127,6 +127,10 @@ alias gp="git push"
 # Net
 alias myip="curl http://ipecho.net/plain; echo"
 
+# VNC
+alias vnc1="vncserver -geometry 768x1024 -dpi 150"
+alias vnc2="vncserver -geometry 1280x720 -dpi 150"
+
 # Package management
 
 # Others
