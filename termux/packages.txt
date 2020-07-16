@@ -1,0 +1,21 @@
+python
+tree
+termux-api python
+p7zip 
+nmap 
+net-tools 
+make 
+man 
+htop 
+gzip 
+grep 
+git 
+curl 
+cmake 
+openssh 
+vim 
+neofetch 
+tar  
+ranger 
+tracepath  
+dnsutils

@@ -1,0 +1,7 @@
+export ZSH="/data/data/com.termux/files/home/.oh-my-zsh"
+
+ZSH_THEME="avit"
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
