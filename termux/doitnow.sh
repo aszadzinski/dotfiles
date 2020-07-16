@@ -1,9 +1,7 @@
-pkg install curl wget -y
-wget https://raw.githubusercontent.com/aszadzinski/dotfiles/master/termux/packages.txt
-wget https://raw.githubusercontent.com/aszadzinski/dotfiles/master/termux/zshrc
+curl https://raw.githubusercontent.com/aszadzinski/dotfiles/master/termux/packages.txt --output packages.txt
+curl https://raw.githubusercontent.com/aszadzinski/dotfiles/master/termux/zshrc --output zshrc
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/aszadzinski/dotfiles/master/termux/pkg.sh)"
 
 rm packages.txt
 rm zshrc
-rm pkg.sh
 
