@@ -74,6 +74,25 @@ alias tmux_return="tmux attach-session"
 # Functions #
 #############
 
+
+function weather()
+{
+	chose=$1
+	loc=$2
+	if [ $1 = "-v2" ]
+	then
+		curl "wttr.in/$2?format=v2" 
+	fi
+	if [ $1 = "-v0" ]
+	then
+		curl "wttr.in/$2?0" 
+	fi
+	if [ $1 = "-v1" ]
+	then
+		curl "wttr.in/$2"
+	fi	
+}
+
 function ggit()
 {
 	git status

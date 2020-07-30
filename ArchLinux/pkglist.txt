@@ -19,11 +19,12 @@ baobab
 base
 bash-completion
 beep
-bind-tools
+bind
 binutils
 bison
 boost
 btrfs-progs
+chromium
 cifs-utils
 cmake
 cmus
@@ -51,11 +52,9 @@ grub
 gvfs
 hashcat
 haveged
-hdf5
 htop
 i3-gaps
 i3blocks
-i3lock-color
 i3status
 imagemagick
 inetutils
@@ -76,6 +75,7 @@ lightdm-gtk-greeter
 linux
 linux-firmware
 logrotate
+luit
 lvm2
 lxappearance
 m4
@@ -100,10 +100,9 @@ nload
 nmap
 notification-daemon
 ntfs-3g
+ntp
 odt2txt
 okular
-opencv
-opencv-samples
 openssh
 os-prober
 otf-font-awesome
@@ -124,6 +123,7 @@ pulseaudio-equalizer
 pulseaudio-jack
 python-numpy
 python-pip
+python-virtualenv
 ranger
 redshift
 reflector
@@ -148,6 +148,7 @@ thunar
 tigervnc
 tk
 tmux
+tor
 traceroute
 transmission-gtk
 tree
@@ -188,7 +189,6 @@ xorg-fonts-100dpi
 xorg-fonts-75dpi
 xorg-fonts-encodings
 xorg-iceauth
-xorg-luit
 xorg-mkfontscale
 xorg-server
 xorg-server-common

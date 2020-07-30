@@ -190,7 +190,7 @@ exec virtualenv /tmp/venv
 exec localedef -i en_US -f UTF-8 en_US.UTF-8
 exec nm-applet
 exec syncthing --no-browser
-exec ~/.config/i3/scripts/sync_doc
+#exec ~/.config/i3/scripts/sync_doc
 #exec dropbox
 #exec nextcloud
 
@@ -198,7 +198,8 @@ exec ~/.config/i3/scripts/sync_doc
 ### Screen Setup ###
 ####################
 
-exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 2025x0 --rotate normal --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
+exec xrandr xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI1 --mode 1920x1080 --pos 1920x0 --rotate normal --output VIRTUAL1 --off
+
 exec compton --config ~/.config/compton.conf
 exec pasystray
 exec feh --bg-center ~/.config/i3/wallpaper/a1.png
@@ -208,7 +209,7 @@ exec /usr/lib/notification-daemon-1.0/notification-daemon
 exec redshift -l 55.7:12.6 -t 6500:4300
 exec xinput set-prop 15 389 1
 exec xinput set-prop 15 307 1
-exec xautolock -time 21 -locker ~/.config/i3/scripts/lock
+exec xautolock -time 30 -locker ~/.config/i3/scripts/lock
 
 #starting scripts
 #exec_always i3-msg 'workspace $ws1; exec terminator -x  ~/.config/i3/scripts/start_script'
