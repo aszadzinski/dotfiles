@@ -198,7 +198,7 @@ exec syncthing --no-browser
 ### Screen Setup ###
 ####################
 
-exec xrandr xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI1 --mode 1920x1080 --pos 1920x0 --rotate normal --output VIRTUAL1 --off
+exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 2025x0 --rotate normal --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
 
 exec compton --config ~/.config/compton.conf
 exec pasystray
