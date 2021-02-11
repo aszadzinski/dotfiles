@@ -1,0 +1,72 @@
+#!/bin/bash
+
+################
+# Installation #
+################
+
+echo "Are you sure?"
+read startt
+
+sh scripts/install
+
+############
+# Packages #
+############
+
+# Install packages
+cd /tmp
+pacman -S $(cat pkglist.txt)
+
+# Oh-My-Zsh
+su albert
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# PIP
+
+pip install -r configurations/requirements.txt
+
+# YAY
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+rm -rf yay
+
+# Install AUR
+yay -S $(cat aur.txt)
+
+# create folders
+cd /home/albert
+mkdir Documents
+mkdir Downloads
+mkdir Videos
+mkdir Music
+mkdir Projects
+mkdir Pictures
+mkdir oandbackups
+mkdir Camera
+xdg-user-dirs-update
+
+# Copy Configurations
+cp configurations/.zshrc 	~/
+cp configurations/tmux.conf 	~/.tmux.conf
+cp configurations/compton.conf 	~/.config/
+cp -r configurations/i3 	~/.config/
+cp -r configurations/ranger 	~/.config/
+cp -r configurations/terminator	~/.config/
+cp -r configurations/i3status 	~/.config/
+cp -r configurations/atom/* 	~/.atom/
+gpg -d configurations/ssh_config.gpg >> tmp
+cp tmp ~/.ssh/config
+rm tmp
+
+exit
+cp configurations/vimrc 	/etc/
+
+
+
+##############
+## PROJECTS ##
+##############
+
+#sh scripts/Projects
