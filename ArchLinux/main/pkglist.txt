@@ -22,6 +22,7 @@ beep
 bind
 binutils
 bison
+blender
 boost
 btrfs-progs
 chromium
@@ -43,6 +44,7 @@ fakeroot
 feh
 firefox
 flex
+freecad
 gcc
 gdb
 geany
@@ -68,6 +70,9 @@ ipw2200-fw
 ipython
 jfsutils
 keepassxc
+kicad
+kicad-library
+kicad-library-3d
 libreoffice-fresh
 libva-intel-driver
 libva-vdpau-driver
@@ -75,7 +80,9 @@ lightdm
 lightdm-gtk-greeter
 linux
 linux-firmware
+linux-lts
 logrotate
+lsof
 luit
 lvm2
 lxappearance
@@ -84,6 +91,7 @@ make
 man-pages
 mdadm
 mesa-demos
+minicom
 mlocate
 modemmanager
 mpgtx
