@@ -4,10 +4,12 @@ autopep8
 backcall
 btrfsutil
 cachecontrol
+cffi
 colorama
 contextlib2
 decorator
 distro
+dnspython
 html5lib
 importlib-metadata
 ipython
@@ -16,6 +18,7 @@ isc
 jedi
 lensfun
 lockfile
+markdown
 matplotlib
 more-itertools
 ordered-set
@@ -34,6 +37,7 @@ pybind11
 pygments
 pyopenssl
 pyqt5
+pyside2
 pytoml
 ranger-fm
 reflector

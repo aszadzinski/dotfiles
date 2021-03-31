@@ -35,6 +35,7 @@ dhcpcd
 dmenu
 dmidecode
 dmraid
+docker
 dosfstools
 doxygen
 efibootmgr
@@ -153,6 +154,7 @@ stress
 sudo
 syncthing
 sysfsutils
+telegram-desktop
 terminator
 terminus-font
 texinfo
@@ -184,8 +186,6 @@ vim
 vim-airline
 vim-fugitive
 vim-syntastic
-virtualbox
-virtualbox-host-modules-arch
 vlc
 w3m
 weechat
