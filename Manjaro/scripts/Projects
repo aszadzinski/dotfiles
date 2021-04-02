@@ -1,0 +1,31 @@
+#!/bin/bash
+
+echo "Restoring Project folder..."
+
+echo "creating folders"
+mkdir ~/Projects
+mkdir ~/Projects/github
+
+#InProgress
+mkdir ~/Projects/github/InProgress
+#Subfolders
+git clone git@github.com:aszadzinski/aszadzinski.github.io.git
+git clone git@github.com:aszadzinski/dockerfiles.git
+git clone git@github.com:aszadzinski/dotfiles.git
+git clone git@github.com:aszadzinski/scripts-and-notes.git
+git clone git@github.com:aszadzinski/xmmppy.git
+
+# Old to finish
+mkdir ~/Projects/github/Old_to_finish
+#Subfolders
+git clone git@github.com:aszadzinski/help-desk-panel.git
+git clone git@github.com:aszadzinski/holography-simulation.git
+git clone git@github.com:aszadzinski/yee-algorithm.git
+
+# Someday
+mkdir ~/Projects/github/Someday
+#Subfolders
+
+# Work
+mkdir ~/Projects/work
+git clone git@github.com:aszadzinski/BINA-detector.git

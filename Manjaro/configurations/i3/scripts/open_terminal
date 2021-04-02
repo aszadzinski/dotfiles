@@ -1,0 +1,3 @@
+#!/bin/bash
+
+su albert -c "terminator -e scripts/startup/run"
