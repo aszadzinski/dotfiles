@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Mounting external HDD..."
+cat /home/albert/.luksPS | cryptsetup open --type=luks /dev/sdb3 hdd1TB -
+mount /dev/mapper/hdd1TB /data
+
+echo "Mounting RPi3(sshfs)..."
+
+
