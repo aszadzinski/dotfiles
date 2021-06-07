@@ -1,4 +1,0 @@
-#!/bin/bash
-
-tmux new-session -d -s main scripts/startup/intmux 
-tmux attach-session -t main

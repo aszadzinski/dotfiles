@@ -1,0 +1,60 @@
+#!/bin/bash
+
+echo "Usage: ./backup_all <PC name> -s  "
+echo "-s	get system packages list e.g. deb, arch, rpm"
+echo 
+
+
+
+#####################################################
+mkdir $1
+echo "## Configuration files for $1" > $1/README.md
+
+#####################################################
+echo "Copying configuration files..."
+echo "-- i3"
+cp -r ~/.config/i3		$1/
+echo "-- terminator"
+cp -r ~/.config/terminator	$1/
+echo "-- atom"
+mkdir $1/atom
+cp ~/.atom/config.cson		$1/atom/
+cp ~/.atom/keymap.cson 		$1/atom/
+cp ~/.atom/snippets.cson	$1/atom/
+echo "-- tmux"
+cp ~/.tmux.conf			$1/tmux.conf
+echo "-- zsh"
+cp ~/.zshrc			$1/zshrc
+echo "-- ranger"
+cp ~/.config/ranger/rc.conf 	$1/rc.conf
+echo "-- wallpaper"
+cp ~/.wallpaper.png		$1/
+
+#echo "-- ssh config"
+#cp ~/.ssh/config		$1/ssh_config
+#gpg -e -r E723C5C95E68CB77C0F4E18DD0328D3412ADD432 $1/ssh_config
+#rm $1/ssh_config
+
+
+if [ $2 = "-s" ]
+then
+	echo "Getting packages..."
+	echo "Enter distribution: deb/arch/rpm"
+	read distribution
+	if [ $distribution = "arch" ]
+	then	
+		pacman -Qqen > $1/pkglist.txt
+	fi
+	if [ $distribution = "deb" ]
+	then	
+		apt-mark showmanual > $1/pkglist.txt
+	fi
+	if [ $distribution = "yum" ]
+	then	
+		pacman -Qqen > $1/pkglist.txt
+	fi
+
+	echo "Getting Python packages..."
+	pip-chill --no-version > $1/requirements.txt
+	
+fi

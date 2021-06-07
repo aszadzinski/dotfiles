@@ -1,0 +1,22 @@
+# Wacom tablet binding switcher 
+
+if [ $1 == "--vim" ]; then
+	echo "WACOM: vim bindings"
+	xsetwacom set "Wacom Intuos BT S Pad pad" Button 1 "key +esc -esc +shift semicolon -shift x KP_Enter" 		#Save  and exit
+	xsetwacom set "Wacom Intuos BT S Pad pad" Button 2 "key +esc -esc +shift semicolon -shift b space tab" 		#show files
+	xsetwacom set "Wacom Intuos BT S Pad pad" Button 3 "key +esc -esc +shift semicolon 5 -shift s / / g left left" 	#find and replace all
+	xsetwacom set "Wacom Intuos BT S Pad pad" Button 8 "key +esc -esc +shift semicolon -shift w KP_Enter" 		#Save
+elif [ $1 == "--default" ]; then
+	echo "WACOM: default bindings"
+	xsetwacom set "Wacom Intuos BT S Pad pad" Button 2 9 								#next button
+	xsetwacom set "Wacom Intuos BT S Pad pad" Button 1 8 								#back button
+	xsetwacom set "Wacom Intuos BT S Pad pad" Button 3 "key +super f1"						#switch screen 1
+	xsetwacom set "Wacom Intuos BT S Pad pad" Button 8 "key +super f2"						#switch screen 2
+
+elif [ $1 == "--nav" ]; then
+	echo "WACOM: nav bindings"
+	xsetwacom set "Wacom Intuos BT S Pad pad" Button 2 9 								#next button
+	xsetwacom set "Wacom Intuos BT S Pad pad" Button 1 8 								#back button
+	xsetwacom set "Wacom Intuos BT S Pad pad" Button 3 "key up up up up up +up" 					#upx6
+	xsetwacom set "Wacom Intuos BT S Pad pad" Button 8 "key down down down down down +down" 				#downx6
+fi

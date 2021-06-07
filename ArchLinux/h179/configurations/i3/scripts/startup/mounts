@@ -1,9 +1,0 @@
-#!/bin/bash
-
-echo "Mounting external HDD..."
-sudo cryptsetup open --type=luks /dev/sdb3 luks_container
-sudo mount /dev/mapper/luks_container /data
-
-echo "Mounting RPi3(sshfs)..."
-htop
-

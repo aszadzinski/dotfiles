@@ -1,2 +1,0 @@
-curl "wttr.in/katowice?0"
-sensors |less
