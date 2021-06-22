@@ -1,0 +1,10 @@
+#!/bin/bash
+
+tmux new-window "ssh -D 9002 -q -C -N rpi3-eth";tmux last-pane
+tmux splitw "ssh -D 9001 -q -C -N smcebi";	tmux last-window
+
+tmux splitw -hb ranger;				tmux last-pane
+tmux split -b scripts/startup/info;		tmux last-pane
+
+scripts/startup/mounts
+

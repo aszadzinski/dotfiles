@@ -1,0 +1,5 @@
+#dm-tool switch-to-greeter
+gdmflexiserver 
+
+#i3lock -B=sigma -k -e -f --pass-screen-keys
+#xset s activate
