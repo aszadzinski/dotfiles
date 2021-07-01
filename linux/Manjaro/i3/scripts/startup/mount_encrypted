@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Mounting external HDD..."
+cat /home/albert/.luksPS | cryptsetup open --type=luks /dev/sda luks_container -
+mount /dev/mapper/luks_container /data
+
+
