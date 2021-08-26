@@ -20,7 +20,6 @@
     telemetryConsent: "no"
   editor:
     fontFamily: "DejaVu Sans Mono"
-    fontSize: 15
     lineHeight: 1.4
     showIndentGuide: true
     showInvisibles: true

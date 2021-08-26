@@ -215,6 +215,7 @@ veracrypt
 vim
 vim-airline
 vim-fugitive
+vim-nerdtree
 vim-syntastic
 virtualbox
 virtualbox-host-modules-arch

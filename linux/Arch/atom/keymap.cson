@@ -11,7 +11,8 @@
   'ctrl-b s': 'terminal:open'
 '.platform-linux':
   'ctrl-B': 'fuzzy-finder:toggle-buffer-finder'
-  'ctrl-shift-3':'tree-view:toggle'
+  'ctrl-n':'tree-view:toggle'
+  'ctrl-shift-n':'tree-view:toggle'
 '.workspace':
   'ctrl-shift-4':'github:toggle-git-tab'
   'ctrl-shift-2':'github:toggle-github-tab'
