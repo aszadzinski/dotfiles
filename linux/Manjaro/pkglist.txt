@@ -223,6 +223,7 @@ ntp
 numlockx
 nvidia-prime
 nvidia-utils
+obs-studio
 odt2txt
 okular
 openresolv
@@ -361,6 +362,7 @@ viewnior
 vim
 vim-airline
 vim-fugitive
+vim-nerdtree
 vim-syntastic
 virtualbox
 vlc
