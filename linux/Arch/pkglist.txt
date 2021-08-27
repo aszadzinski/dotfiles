@@ -130,6 +130,7 @@ nmap
 notification-daemon
 ntfs-3g
 ntp
+obs-studio
 odt2txt
 okular
 openssh
