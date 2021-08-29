@@ -201,10 +201,10 @@ exec syncthing --no-browser
 
 exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 2025x0 --rotate normal --output HDMI1 --mode 1920x1080 --pos 0x0 --rotate normal --output VIRTUAL1 --off
 
-exec compton --config ~/.config/compton.conf
+exec picom  --experimental-backends
 exec pasystray
 exec xfce4-power-manager
-exec feh --bg-center ~/.config/i3/wallpaper/a1.png
+exec_always feh --bg-center ~/.wallpaper.png
 exec /usr/lib/notification-daemon-1.0/notification-daemon 
 #exec /home/albert/.an2linuxserver/an2linuxserver.py
 

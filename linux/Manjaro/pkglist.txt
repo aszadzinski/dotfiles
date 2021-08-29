@@ -240,6 +240,7 @@ pciutils
 perl
 perl-file-mimeinfo
 perl-image-exiftool
+picom
 pidgin
 pkgconf
 playerctl
