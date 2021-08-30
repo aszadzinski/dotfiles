@@ -130,15 +130,16 @@ bar {
 	}
 }
 
-set $bg-color 	         #1b1a1f
-set $bg-colorr		 #717171
-set $inactive-bg-color   #2f343f
+set $bg-color 	         #222730
+set $bg-colorr		 #3c4454
+set $inactive-bg-color   #11171e
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
+set $inactive-text-color-n #222730
 set $urgent-bg-color     #E53935
 #                       border              background         text                 indicator
-client.focused          $bg-color          $bg-colorr          $text-color          #00ff00
-client.unfocused        $inactive-bg-color $inactive-bg-color  $inactive-text-color #00ff00
+client.focused          $bg-color          $bg-colorr         $text-color          #00ff00
+client.unfocused        $inactive-bg-color $inactive-bg-color-n  $inactive-text-color #00ff00
 client.focused_inactive $inactive-bg-color $inactive-bg-color  $inactive-text-color #00ff00
 client.urgent           $urgent-bg-color   $urgent-bg-color    $text-color          #00ff00
 
@@ -204,7 +205,7 @@ exec xrandr --output eDP1 --primary --mode 1920x1080 --pos 2025x0 --rotate norma
 exec picom  --experimental-backends
 exec pasystray
 exec xfce4-power-manager
-exec_always feh --bg-center ~/.wallpaper.png
+exec_always feh --bg-fill ~/.wallpaper.png
 exec /usr/lib/notification-daemon-1.0/notification-daemon 
 #exec /home/albert/.an2linuxserver/an2linuxserver.py
 

@@ -60,7 +60,7 @@ alias pacman_unused="pacman -Qtdq"
 # Others
 alias ..="cd .."
 alias ...="cd ../.."
-alias ls="ls -a --color=auto"
+alias ls="ls -la --color=auto"
 alias venv="source /tmp/venv/bin/activate"
 
 # YT

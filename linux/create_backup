@@ -12,6 +12,8 @@ echo "## Configuration files for $1" > $1/README.md
 
 #####################################################
 echo "Copying configuration files..."
+echo "-- picom"
+cp -r ~/.config/picom/picom.conf	$1/
 echo "-- vim"
 cp -r ~/.vim/vimrc		$1/
 echo "-- i3"
