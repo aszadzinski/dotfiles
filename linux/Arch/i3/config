@@ -161,7 +161,7 @@ bar {
 	}
 }
 
-set $bg-color 	         #1b1a1f
+set $bg-color 	         #201f25
 set $bg-colorr		 #717171
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
@@ -227,7 +227,7 @@ exec syncthing --no-browser
 ### Screen Setup ###
 ####################
 
-exec compton --config ~/.config/compton.conf
+exec picom --experimental-backends
 exec pasystray
 exec /usr/lib/notification-daemon-1.0/notification-daemon 
 

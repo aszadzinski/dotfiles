@@ -8,9 +8,8 @@
   new_tab = <Primary><Shift>o
 [profiles]
   [[default]]
-    background_color = "#1b1a1f"
+    background_color = "#201f25"
     background_darkness = 0.97
-    background_type = transparent
     cursor_color = "#aaaaaa"
     font = DejaVu Sans Mono Bold 10
     foreground_color = "#babdb6"
