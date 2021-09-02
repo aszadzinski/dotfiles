@@ -16,6 +16,7 @@ aspell-en
 aspell-pl
 atom
 audacious
+auto-cpufreq
 autoconf
 automake
 autopep8
@@ -33,6 +34,7 @@ blender
 blueman
 boost
 btrfs-progs
+bumblebee
 bzip2
 catfish
 cheese
@@ -45,6 +47,7 @@ crda
 cronie
 cryptsetup
 ctags
+cuda-tools
 dbus-x11
 device-mapper
 dhclient
@@ -100,6 +103,7 @@ gst-plugins-base
 gst-plugins-good
 gst-plugins-ugly
 gtkhash-thunar
+gtop
 gufw
 gvfs
 gvfs-afc
@@ -215,6 +219,7 @@ networkmanager-pptp
 networkmanager-vpnc
 nfs-utils
 nmap
+notification-daemon
 noto-fonts
 noto-fonts-cjk
 nss-mdns
@@ -287,7 +292,7 @@ reiserfsprogs
 retroarch
 retroarch-assets-glui
 ristretto
-root
+root-cuda
 rsync
 s-nail
 samba
@@ -336,6 +341,7 @@ tigervnc
 timeshift
 tk
 tlp
+tlp-rdw
 tmux
 traceroute
 transmission-gtk
@@ -390,6 +396,8 @@ xf86-input-libinput
 xf86-input-synaptics
 xf86-input-void
 xf86-input-wacom
+xf86-video-intel
+xf86-video-nouveau
 xfburn
 xfce4-appfinder
 xfce4-battery-plugin

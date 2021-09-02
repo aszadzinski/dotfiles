@@ -5,6 +5,7 @@ appdirs
 application-utility
 arandr
 asn1crypto
+auto-cpufreq
 autopep8
 backcall
 btrfsutil
@@ -16,7 +17,6 @@ certifi
 cffi
 contextlib2
 decorator
-distro
 dnspython
 gufw
 html5lib
