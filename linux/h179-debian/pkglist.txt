@@ -15,9 +15,11 @@ bind9-host
 binutils
 bsdmainutils
 bsdutils
+build-essential
 busybox
 cmake
 cmake-qt-gui
+compton
 console-setup
 coreutils
 cpio
@@ -194,6 +196,7 @@ libxft-dev
 libxml2-dev
 libxmu-dev
 libxpm-dev
+libxrender-dev
 libxtables12
 libzstd1
 linux-headers-4.19.0-14-all
@@ -220,8 +223,10 @@ net-tools
 netbase
 netcat-traditional
 nginx
+nmap
 numix-gtk-theme
 numix-icon-theme-circle
+nvidia-cuda-toolkit
 nvidia-detect
 nvidia-driver
 nvme-cli
@@ -241,6 +246,7 @@ python2.7
 python3-autopep8
 python3-matplotlib
 python3-numpy
+python3-pip
 python3-reportbug
 python3-scipy
 python3-sympy
@@ -296,7 +302,9 @@ virtualbox-6.1
 wamerican
 wget
 whiptail
+x11proto-xext-dev
 xautolock
+xorg-dev
 xtightvncviewer
 xxd
 zathura

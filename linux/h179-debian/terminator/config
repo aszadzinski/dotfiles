@@ -8,16 +8,14 @@
   new_tab = <Primary><Shift>o
 [profiles]
   [[default]]
-    background_color = "#272d31"
+    background_color = "#2e3440"
     background_darkness = 1.0
-    background_type = transparent
     cursor_color = "#aaaaaa"
     font = Monospace 15
     foreground_color = "#babdb6"
     show_titlebar = False
     scrollbar_position = hidden
     use_system_font = False
-    background_alpha = 0.2
 [layouts]
   [[default]]
     [[[child1]]]

@@ -109,7 +109,7 @@ bar {
 	}
 }
 
-set $bg-color 	         #24292c
+set $bg-color 	         #292e39
 set $bg-colorr		 #717171
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
@@ -168,11 +168,13 @@ exec syncthing --no-browser
 ####################
 ### Screen Setup ###
 ####################
-exec randr --output DP-0 --primary --mode 3840x2160 --pos 2160x1036 --rotate normal --output DP-1 --off --output DP-2 --mode 3840x2160 --pos 0x0 --rotate left --output DP-3 --off --output DP-4 --mode 3840x2160 --pos 6000x0 --rotate left --output DP-5 --off
+#
+exec ~/.config/i3/scripts/startup/monitors
+#exec randr --output DP-0 --primary --mode 3840x2160 --pos 2160x1036 --rotate normal --output DP-1 --off --output DP-2 --mode 3840x2160 --pos 0x0 --rotate left --output DP-3 --off --output DP-4 --mode 3840x2160 --pos 6000x0 --rotate left --output DP-5 --off
 
 #exec picom --config ~/.config/picom/picom.conf
 exec pasystray
-exec feh --bg-fill ~/.config/i3/wallpaper/a1.png
+exec_always feh --bg-fill ~/.wallpaper.png
 exec /usr/lib/notification-daemon-1.0/notification-daemon 
 
 exec redshift -l 55.7:12.6 -t 6500:4300
