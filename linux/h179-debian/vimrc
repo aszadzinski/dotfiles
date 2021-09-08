@@ -1,5 +1,6 @@
 runtime! archlinux.vim
 
+execute pathogen#infect()
 
 syntax enable
 filetype plugin on
@@ -9,7 +10,7 @@ set nocompatible
 set laststatus=2
 set path+=**
 set wildmenu
-
+set backspace=indent,eol,start
 command! MakeTags !ctags -R .
 
 let g:netrw_banner = 0

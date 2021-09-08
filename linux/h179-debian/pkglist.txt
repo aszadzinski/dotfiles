@@ -26,6 +26,7 @@ cpio
 cpulimit
 cputool
 cron
+curl
 dash
 dbus
 debconf
