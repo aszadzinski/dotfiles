@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Deleting external HDD..."
+#umount /data
+#cryptsetup close hdd1TB
