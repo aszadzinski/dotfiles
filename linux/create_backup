@@ -32,7 +32,7 @@ cp ~/.tmux.conf			$1/tmux.conf
 echo "-- zsh"
 cp ~/.zshrc			$1/zshrc
 echo "-- ranger"
-cp ~/.config/ranger/rc.conf 	$1/rc.conf
+cp -r  ~/.config/ranger		$1/
 echo "-- wallpaper"
 cp ~/.wallpaper.png		$1/
 

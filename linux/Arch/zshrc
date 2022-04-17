@@ -127,6 +127,11 @@ function rmexif()
 	rm $1_original
 }
 
+function bgr()
+{
+	nohup `$@` &>/dev/null &
+}
+
 function pip-upload()
 {
 
