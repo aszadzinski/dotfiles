@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo "Backuping termux dotfiles"
+
+echo "--> Ranger"
+cp -r ~/.config/ranger .
+echo "--> Tmux"
+cp -r ~/.tmux.conf .
+echo "--> zshrc"
+cp -r ~/.zshrc .
+echo "--> vim"
+cp -r ~/.vim .
+echo "--> shortcuts"
+cp -r ~/.shortcuts .
+echo "--> packages"
+apt-mark showmanual > packages.txt

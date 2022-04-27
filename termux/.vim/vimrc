@@ -1,0 +1,29 @@
+runtime! archlinux.vim
+
+
+syntax enable
+filetype plugin on
+
+set number
+set nocompatible
+set laststatus=2
+set path+=**
+set wildmenu
+
+command! MakeTags !ctags -R .
+
+let g:netrw_banner = 0
+let g:netrw_browse_split=4
+let g:netrw_altv=1
+let g:netrw_liststyle=3
+let g:netrw_list_hide=netrw_gitignore#Hide()
+let g:netrw_list_hide=',\(^\|\s\s\)\zs\.\S\+'
+
+let g:airline_theme = 'murmur'
+let g:airline_powerline_fonts = 1
+
+let g:airline#extensions#hunks#enabled=0
+let g:airline#extensions#branch#enabled=1
+
+nnoremap <C-n> :NERDTree<CR>
+nmap <S-Tab> <C-w>
