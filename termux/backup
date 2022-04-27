@@ -14,3 +14,7 @@ echo "--> shortcuts"
 cp -r ~/.shortcuts .
 echo "--> packages"
 apt-mark showmanual > packages.txt
+echo "--> motd"
+cp ~/../usr/etc/motd .
+echo "--> neofetch"
+cp -r  ~/.config/neofetch .

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+cdate=$(date +"%Y%m%d_%H%M%S")
+path=~/storage/shared/DCIM/Camera/Spy/
+
+sleep 2
+
+termux-vibrate
+termux-camera-photo $path"spy_"$cdate".jpg"
+termux-vibrate
+
+sleep 2
+
+termux-toast "Photo spy_"$cdate".jpg"
