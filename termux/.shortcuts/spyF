@@ -7,15 +7,17 @@ sleep 2
 
 termux-vibrate
 cdate=$(date +"%Y%m%d_%H%M%S")
-termux-camera-photo $path"spy_"$cdate".jpg"
+termux-camera-photo -c 1 $path"spy_"$cdate".jpg"
 termux-vibrate
 cdate=$(date +"%Y%m%d_%H%M%S")
-termux-camera-photo $path"spy_"$cdate".jpg"
+termux-camera-photo -c 1 $path"spy_"$cdate".jpg"
+
 termux-vibrate
 cdate=$(date +"%Y%m%d_%H%M%S")
-termux-camera-photo $path"spy_"$cdate".jpg"
+termux-camera-photo -c 1 $path"spy_"$cdate".jpg"
+
 termux-vibrate
 
 sleep 2
 
-termux-toast "Photo spy_"$cdate".jpg"
+termux-toast "Photo -c 1 spy_"$cdate".jpg"
