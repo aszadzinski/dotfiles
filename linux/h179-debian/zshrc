@@ -34,6 +34,7 @@ alias pdflatex="pdflatex --interaction nonstopmode"
 alias vimr="vim -R"
 alias c="xclip"
 alias v="xclip -o"
+alias note="vim ~/Documents/PhD/QuickNotes.md"
 
 # GIT shortcuts
 alias gst="git status"
