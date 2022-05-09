@@ -1,4 +1,7 @@
 *history*
+*pycache*
+*.asc
+*.key
 *bookmarks*
 *tagged*
 *.swp

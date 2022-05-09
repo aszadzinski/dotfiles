@@ -27,3 +27,6 @@ let g:airline#extensions#branch#enabled=1
 
 nnoremap <C-n> :NERDTree<CR>
 nmap <S-Tab> <C-w>
+
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+nnoremap <C-w>E :SyntasticCheck<CR>

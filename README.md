@@ -2,10 +2,11 @@
 
 Some PC settings...
 
-
 ### Screenshots:
 
 ![Arch](.screenshots/arch.png)
+
+![Termux](.screenshots/termux.png)
 
 ![Manjaro](.screenshots/manjaro.png)
 
