@@ -9,6 +9,9 @@ export ZSH="/home/albert/.oh-my-zsh"
 plugins=(
   git
 	)
+export VISUAL=nvim;
+export EDITOR=nvim;
+alias vim="nvim"
 
 #################
 # Configuration #
