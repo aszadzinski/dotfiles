@@ -40,6 +40,8 @@ pad="`xsetwacom --list devices | grep 'type: PAD' | \
 alias plaspell="aspell -c -t --lang=pl"
 alias pdflatex="pdflatex --interaction nonstopmode"
 alias vimr="vim -R"
+alias cc="xclip -selection clipboard"
+alias vv="xclip -o -selection clipboard"
 alias c="xclip"
 alias v="xclip -o"
 alias note="vim ~/Documents/Notes/QuickNote.md"
