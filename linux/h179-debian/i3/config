@@ -207,3 +207,7 @@ bindsym $mod+F2 exec xsetwacom set "Wacom Intuos BT S Pen stylus"  MapToOutput H
 
 bindsym $mod+F3 exec ~/.config/i3/scripts/wacom_bindings --default
 bindsym $mod+F4 exec ~/.config/i3/scripts/wacom_bindings --vim
+
+
+#xrandr --output DP-5 --off --output DP-4 --mode 3840x2160 --pos 6000x976 --rotate normal --output DP-3 --off --output DP-2 --mode 3840x2160 --pos 0x0 --rotate left --output DP-1 --off --output DP-0 --primary --mode 3840x2160 --pos 2160x976 --rotate normal
+
