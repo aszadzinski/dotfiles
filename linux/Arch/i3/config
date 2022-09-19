@@ -176,7 +176,7 @@ client.urgent           $urgent-bg-color   $urgent-bg-color    $text-color      
 
 gaps inner 14
 gaps outer 0
-smart_gaps on
+#smart_gaps on
 
 
 ################
