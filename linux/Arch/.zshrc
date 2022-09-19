@@ -29,8 +29,8 @@ xset b off
 export PATH=$PATH:$HOME/.local/bin
 pad="`xsetwacom --list devices | grep 'type: PAD' | \
   sed 's/.*id: \([0-9][0-9]*\).*/\1/'`"
-source ~/Programs/root/build/bin/thisroot.sh
 
+#source ~/Programs/root-6.20.04/build/bin/thisroot.sh
 
 ###########
 # ALIASES #
@@ -40,6 +40,8 @@ source ~/Programs/root/build/bin/thisroot.sh
 alias plaspell="aspell -c -t --lang=pl"
 alias pdflatex="pdflatex --interaction nonstopmode"
 alias vimr="vim -R"
+alias cc="xclip -selection clipboard"
+alias vv="xclip -o -selection clipboard"
 alias c="xclip"
 alias v="xclip -o"
 alias note="vim ~/Documents/Notes/QuickNote.md"
