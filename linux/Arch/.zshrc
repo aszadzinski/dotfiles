@@ -9,6 +9,7 @@ export ZSH="/home/albert/.oh-my-zsh"
 plugins=(
   git
 	)
+eval $(thefuck --alias)
 export VISUAL=nvim;
 export EDITOR=nvim;
 alias vim="nvim"
@@ -187,3 +188,5 @@ def setup(app): app.connect('autodoc-skip-member', skip)
 
 	fi
 }
+
+eval $(thefuck --alias)
