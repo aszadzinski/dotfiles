@@ -5,7 +5,7 @@
 #xmodmap -e "keycode 67=Page_Up"
 #xmodmap -e "keycode 68=Page_Down"
 
-export ZSH="/home/albert/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 plugins=(
   git
 	)
@@ -18,7 +18,7 @@ alias vim="nvim"
 # Configuration #
 #################
 
-ZSH_THEME="gnzh" # set by `omz`
+ZSH_THEME="fino" # set by `omz`
 source $ZSH/oh-my-zsh.sh
 export EDITOR=vim
 xset b off
@@ -28,8 +28,6 @@ xset b off
 #############
 
 export PATH=$PATH:$HOME/.local/bin
-pad="`xsetwacom --list devices | grep 'type: PAD' | \
-  sed 's/.*id: \([0-9][0-9]*\).*/\1/'`"
 
 #source ~/Programs/root-6.20.04/build/bin/thisroot.sh
 
