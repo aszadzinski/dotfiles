@@ -7,4 +7,6 @@ return require('packer').startup(function()
 --	use 'kyazdani42/nvim-web-devicons'
 	use 'MunifTanjim/nui.nvim'
 	use 'nvim-neo-tree/neo-tree.nvim'
+	use "williamboman/mason.nvim"
+	use "williamboman/mason-lspconfig.nvim"
 end)
