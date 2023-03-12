@@ -3,7 +3,6 @@ require("mason-lspconfig").setup({
 		ensure_installed = {"pylsp"}
 })
 
-require("lspconfig")["pylsp"].setup {}
 
 
 local on_lsp_attach = function(client, bufnr)
@@ -33,7 +32,6 @@ end
 --   -- This is the default in Nvim 0.7+
 --   debounce_text_changes = 150,
 -- }
-require('lspconfig')['pyright'].setup{
-    on_attach = on_lsp_attach,
-    -- flags = lsp_flags,
+require("lspconfig")["pylsp"].setup {
+		on_attach = on_lsp_attach
 }
