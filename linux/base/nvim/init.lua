@@ -21,6 +21,7 @@ require('user.nvim-tree')
 require('user.colors')
 require('user.lsp-config')
 require('user.telescope')
+require('user.git-config')
 
 _G.__luacache_config = {
   chunks = {
