@@ -21,3 +21,15 @@ require('user.nvim-tree')
 require('user.colors')
 require('user.lsp-config')
 require('user.telescope')
+
+_G.__luacache_config = {
+  chunks = {
+    enable = true,
+    path = vim.fn.stdpath('cache')..'/luacache_chunks',
+  },
+  modpaths = {
+    enable = true,
+    path = vim.fn.stdpath('cache')..'/luacache_modpaths',
+  }
+}
+require('impatient')

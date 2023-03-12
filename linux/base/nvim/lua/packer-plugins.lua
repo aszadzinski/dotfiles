@@ -1,4 +1,5 @@
 return require('packer').startup(function()
+		use 'lewis6991/impatient.nvim' -- speed up lua
 		use 'wbthomason/packer.nvim'
 		use 'gruvbox-community/gruvbox'
 		use 'nvim-lualine/lualine.nvim'
@@ -26,15 +27,15 @@ return require('packer').startup(function()
 						'saadparwaiz1/cmp_luasnip',
 				},
 		}
-		use {
-				'nvim-treesitter/nvim-treesitter',
-				requires = {
-						'nvim-treesitter/nvim-treesitter-textobjects',
-				},
-				config = function()
-						pcall(require('nvim-treesitter.install').update { with_sync = true })
-				end,
-		}
+		-- use {
+		-- 		'nvim-treesitter/nvim-treesitter',
+		-- 		requires = {
+		-- 				'nvim-treesitter/nvim-treesitter-textobjects',
+		-- 		},
+		-- 		config = function()
+		-- 				pcall(require('nvim-treesitter.install').update { with_sync = true })
+		-- 		end,
+		-- }
 end)
 
 -- lua <<EOF
