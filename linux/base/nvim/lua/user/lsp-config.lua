@@ -38,15 +38,29 @@ require("lspconfig")["pylsp"].setup {
     settings = {
         pylsp = {
             plugins = {
-                pycodestyle = {
-                    ignore = {
-							'E203',
-							'W503',
-							'W605',
+					autopep8 = {
+							enabled = true,
 					},
-                    maxLineLength = 140,
-                }
-            }
-        }
-    },
+					flake8 = {
+							enabled = false,
+					},
+					pydocstyle = {
+							enabled = true,
+							ignore = {
+									'D100',
+									'D203',
+									'D213',
+							},
+					},
+					pycodestyle = {
+							ignore = {
+									'E203',
+									'W503',
+									'W605',
+							},
+							maxLineLength = 140,
+					}
+			},
+		}
+	},
 }
