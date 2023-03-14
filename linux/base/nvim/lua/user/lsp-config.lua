@@ -3,10 +3,7 @@ require("mason-lspconfig").setup({
     ensure_installed = {
 			"pylsp",
 			"dockerls",
-			"clangd",
 			"taplo",
-			"ltex",
-			"lua_ls",
 			"volar",
 			"cmake",
 			"tailwindcss",
@@ -75,16 +72,7 @@ require("lspconfig")["pylsp"].setup {
 	},
 }
 
-require("lspconfig")["lua_ls"].setup {
-		on_attach = on_lsp_attach,
-}
-require("lspconfig")["clangd"].setup {
-		on_attach = on_lsp_attach,
-}
 require("lspconfig")["taplo"].setup {
-		on_attach = on_lsp_attach,
-}
-require("lspconfig")["ltex"].setup {
 		on_attach = on_lsp_attach,
 }
 require("lspconfig")["volar"].setup {
@@ -108,3 +96,26 @@ require("lspconfig")["html"].setup {
 require("lspconfig")["tailwindcss"].setup {
 		on_attach = on_lsp_attach,
 }
+
+if jit.arch ~= "arm64" then
+		require("mason-lspconfig").setup({
+			ensure_installed = {
+					"clangd",
+					"lua_ls",
+					"ltex",
+			}
+		})
+		
+		require("lspconfig")["clangd"].setup {
+				on_attach = on_lsp_attach,
+		}
+		require("lspconfig")["ltex"].setup {
+				on_attach = on_lsp_attach,
+		}
+		require("lspconfig")["lua_ls"].setup {
+				on_attach = on_lsp_attach,
+		}
+else
+		print("Can't install some LSP packages. Unsupported system architecture")
+end
+
