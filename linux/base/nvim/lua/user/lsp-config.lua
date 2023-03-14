@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-		ensure_installed = {"pylsp"}
+    ensure_installed = {"pylsp"}
 })
 
 
@@ -33,5 +33,15 @@ end
 --   debounce_text_changes = 150,
 -- }
 require("lspconfig")["pylsp"].setup {
-		on_attach = on_lsp_attach
+    on_attach = on_lsp_attach,
+    settings = {
+        pylsp = {
+            plugins = {
+                pycodestyle = {
+                    -- ignore = {'W391'},
+                    maxLineLength = 140,
+                }
+            }
+        }
+    }
 }
