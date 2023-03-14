@@ -15,7 +15,8 @@ local on_lsp_attach = function(client, bufnr)
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
   vim.keymap.set('n', '<space>la', vim.lsp.buf.format, bufopts)
-  vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
+  vim.keymap.set('n', 'gr',require('telescope.builtin').lsp_references , bufopts)
+  -- vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
   vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
   vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
   vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, bufopts)
@@ -38,10 +39,14 @@ require("lspconfig")["pylsp"].setup {
         pylsp = {
             plugins = {
                 pycodestyle = {
-                    -- ignore = {'W391'},
+                    ignore = {
+							'E203',
+							'W503',
+							'W605',
+					},
                     maxLineLength = 140,
                 }
             }
         }
-    }
+    },
 }
