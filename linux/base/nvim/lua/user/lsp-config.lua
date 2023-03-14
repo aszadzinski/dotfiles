@@ -1,8 +1,18 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-    ensure_installed = {"pylsp"}
+    ensure_installed = {
+			"pylsp",
+			"dockerls",
+			"clangd",
+			"taplo",
+			"ltex",
+			"lua_ls",
+			"volar",
+			"cmake",
+			"tailwindcss",
+			"html",
+	}
 })
-
 
 
 local on_lsp_attach = function(client, bufnr)
@@ -63,4 +73,38 @@ require("lspconfig")["pylsp"].setup {
 			},
 		}
 	},
+}
+
+require("lspconfig")["lua_ls"].setup {
+		on_attach = on_lsp_attach,
+}
+require("lspconfig")["clangd"].setup {
+		on_attach = on_lsp_attach,
+}
+require("lspconfig")["taplo"].setup {
+		on_attach = on_lsp_attach,
+}
+require("lspconfig")["ltex"].setup {
+		on_attach = on_lsp_attach,
+}
+require("lspconfig")["volar"].setup {
+		on_attach = on_lsp_attach,
+}
+require("lspconfig")["yamlls"].setup {
+		on_attach = on_lsp_attach,
+}
+require("lspconfig")["bashls"].setup {
+		on_attach = on_lsp_attach,
+}
+require("lspconfig")["dockerls"].setup {
+		on_attach = on_lsp_attach,
+}
+require("lspconfig")["cmake"].setup {
+		on_attach = on_lsp_attach,
+}
+require("lspconfig")["html"].setup {
+		on_attach = on_lsp_attach,
+}
+require("lspconfig")["tailwindcss"].setup {
+		on_attach = on_lsp_attach,
 }
