@@ -16,6 +16,9 @@ vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
 -- ####################################################
 -- GIT
 -- ####################################################
+vim.keymap.set('n', '<leader>hc', require('telescope.builtin').git_commits, opts)
+vim.keymap.set('n', '<leader>hg', require('telescope.builtin').git_branches, opts)
+vim.keymap.set('n', '<leader>hf', require('telescope.builtin').git_files, opts)
 vim.keymap.set('n', '<leader>hh', require("gitsigns").preview_hunk, opts)
 vim.keymap.set('n', '<leader>hb', function()
 		  require("gitsigns").blame_line { full = true }
