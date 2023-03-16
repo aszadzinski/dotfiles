@@ -35,6 +35,8 @@ export PATH=$PATH:$HOME/.local/bin
 # ALIASES #
 ###########
 
+alias tmux="TERM=screen-256color-bce tmux"
+
 # Text edit
 alias plaspell="aspell -c -t --lang=pl"
 alias pdflatex="pdflatex --interaction nonstopmode"
