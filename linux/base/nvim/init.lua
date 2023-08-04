@@ -20,8 +20,8 @@ vim.g.signcolumn = "yes"
 
 vim.g.asyncrun_open = 6
 
-require('keymaps')
 require('packer-plugins')
+require('keymaps')
 require('visual.colors')
 require('visual.syntax')
 require('visual.statusline')
