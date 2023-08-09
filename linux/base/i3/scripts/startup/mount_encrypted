@@ -3,10 +3,10 @@
 echo "Mounting external HDD..."
 echo "==========================="
 echo "Unencrypting..."
-cat /home/albert/.luksPS | cryptsetup open --type=luks /dev/sdb3 hdd1TB -
+cat /home/athalbraht/.luksPS | cryptsetup open --type=luks /dev/sdb1 Tokyo -
 cat /tmp/luks_callback
 echo "Mounting..."
-mount /dev/mapper/hdd1TB /data
+mount /dev/mapper/Tokyo /data
 echo "==========================="
 
 
