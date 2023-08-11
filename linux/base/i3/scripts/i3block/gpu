@@ -1,0 +1,10 @@
+radeontop -d /tmp/radeontop -l 1 &> /dev/null
+
+if [ $1 == "--gpu" ]
+then
+	tail -n1 /tmp/radeontop | awk '{printf("%.1f%"), $5}'
+fi
+if [ $1 == "--vram" ]
+then
+	tail -n1 /tmp/radeontop | awk '{printf("%.1f%"), $27}'
+fi
