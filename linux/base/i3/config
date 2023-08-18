@@ -200,7 +200,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightne
 bindsym $mod+Ctrl+plus  exec xbacklight -inc 20 # increase screen brightness
 bindsym $mod+Ctrl+minus exec xbacklight -dec 20 # decrease screen brightness
 
-bindsym $mod+Shift+f exec firefox
+bindsym $mod+Shift+f exec DRI_PRIME=1 firefox
 bindsym $mod+Ctrl+f exec firefox --private-window
 
 #################

@@ -6,5 +6,7 @@ then
 fi
 if [ $1 == "--vram" ]
 then
-	tail -n1 /tmp/radeontop | awk '{printf("%.1f%"), $27}'
+	#tail -n1 /tmp/radeontop | awk '{printf("%.1f%"), $27}'
+	echo "`cat /sys/class/drm/card0/device/mem_info_vis_vram_used` `cat /sys/class/drm/card0/device/mem_info_vis_vram_total`" | awk '{printf("%.1f%"), $1/$2 *100}'
+
 fi
