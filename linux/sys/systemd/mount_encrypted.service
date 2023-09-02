@@ -1,0 +1,13 @@
+[Unit]
+Description=Mount Encrypted Disks
+After=network.target nss-lookup.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/athalbraht/.config/i3/scripts/startup/mount_encrypted
+ExecStop=/home/athalbraht/.config/i3/scripts/startup/umount_encrypted
+#Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
