@@ -1,0 +1,13 @@
+[Unit]
+After=network.target
+
+[Service]
+Type=simple
+User=athlabraht
+ExecStart=ssh -D 49004 -q -C -N rpi3-eth
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
+
