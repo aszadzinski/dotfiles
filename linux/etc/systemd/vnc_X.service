@@ -1,0 +1,13 @@
+[Unit]
+After=network.target
+
+[Service]
+Type=simple
+User=athalbraht
+ExecStart=/usr/bin/ssh -L localhost:40791:localhost:40791 -q -C -N pc
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
+
