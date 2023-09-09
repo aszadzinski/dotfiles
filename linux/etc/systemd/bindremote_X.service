@@ -1,0 +1,13 @@
+[Unit]
+After=network.target
+
+[Service]
+Type=simple
+User=athalbraht
+ExecStart=ssh -R127.0.0.1:3333:127.0.0.1:3333 -q -C -N remotepc
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
+
