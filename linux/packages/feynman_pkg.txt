@@ -140,6 +140,7 @@ reiserfsprogs
 rsync
 screenkey
 scrot
+signal-desktop
 smartmontools
 speedtest-cli
 sqlitebrowser
