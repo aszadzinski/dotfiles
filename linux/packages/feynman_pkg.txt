@@ -115,6 +115,9 @@ ntp
 nvtop
 obs-studio
 odt2txt
+opencl-clover-mesa
+opencl-headers
+opencl-rusticl-mesa
 openssh
 os-prober
 otf-font-awesome
