@@ -203,8 +203,10 @@ bindsym XF86AudioLowerVolume exec amixer set Master -q 5%-
 bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
-bindsym $mod+Ctrl+plus  exec xbacklight -inc 20 # increase screen brightness
-bindsym $mod+Ctrl+minus exec xbacklight -dec 20 # decrease screen brightness
+bindsym $mod+Ctrl+plus  exec ~/.config/i3/scripts/brightness_switch --on
+bindsym $mod+Ctrl+minus  exec ~/.config/i3/scripts/brightness_switch --off
+#bindsym $mod+Ctrl+plus  exec xbacklight -inc 20 # increase screen brightness
+#bindsym $mod+Ctrl+minus exec xbacklight -dec 20 # decrease screen brightness
 
 bindsym $mod+Shift+f exec DRI_PRIME=1 firefox
 bindsym $mod+Ctrl+f exec firefox --private-window

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ $1 == "--off" ]; then
+	echo "Screen turned off"
+	echo 0 > /sys/class/backlight/intel_backlight/brightness
+
+elif [ $1 == "--on" ]; then
+	echo "Screen turned on"
+	echo 7500 > /sys/class/backlight/intel_backlight/brightness
+fi
