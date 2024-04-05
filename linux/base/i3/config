@@ -5,6 +5,12 @@
 
 set $mod Mod4
 
+# Disable Caps
+exec setxkbmap -option 'ctrl:nocaps'
+
+#swap Win with Alt_L for Nor-Tec BT keyboard
+exec setxkbmap -device 24 -option 'ctrl:nocaps' -option 'altwin:swap_lalt_lwin'
+
 font pango:monospace 7
 floating_modifier $mod
 
