@@ -1,2 +1,5 @@
+#!/bin/bash
+
 i3lock -B=sigma -k -e -f --pass-screen-keys
-xset s activate
+~/.config/i3/scripts/brightness_switch --off
+#xset s activate
