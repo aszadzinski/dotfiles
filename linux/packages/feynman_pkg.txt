@@ -4,6 +4,7 @@ adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
 aircrack-ng
 alsa-utils
+android-tools
 antiword
 arandr
 arc-gtk-theme
@@ -20,11 +21,15 @@ base-devel
 bash-completion
 beep
 bind
+blueman
+bluez
+bluez-utils
 boost
 bpytop
 btrfs-progs
 calibre
 cheese
+chromaprint
 chromium
 cifs-utils
 cmake
@@ -70,7 +75,9 @@ ipython
 jfsutils
 kdenlive
 keepassxc
+kid3
 krita
+lensfun
 libreoffice-fresh
 libva-intel-driver
 lightdm
@@ -134,6 +141,8 @@ powertop
 proxychains-ng
 pulseaudio-equalizer
 pulseaudio-jack
+python-twisted
+python-virtualenv
 qjackctl
 radeontop
 ranger
@@ -141,6 +150,7 @@ redshift
 reflector
 reiserfsprogs
 rsync
+scrcpy
 screenkey
 scrot
 signal-desktop
@@ -161,8 +171,11 @@ texlive-basic
 texlive-bibtexextra
 texlive-binextra
 texlive-fontsextra
+texlive-langpolish
+texlive-latexextra
 texlive-mathscience
 texlive-pictures
+texlive-plaingeneric
 thefuck
 thunar
 tigervnc
@@ -185,6 +198,10 @@ usb_modeswitch
 usbutils
 vdpauinfo
 veracrypt
+virtualbox
+virtualbox-guest-iso
+virtualbox-guest-utils
+virtualbox-host-dkms
 w3m
 weechat
 wget
@@ -197,6 +214,7 @@ xdotool
 xf86-input-wacom
 xf86-video-amdgpu
 xf86-video-ati
+xf86-video-dummy
 xf86-video-intel
 xf86-video-vesa
 xfce4-terminal
