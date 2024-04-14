@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+
+import subprocess as sp
+
+try:
+    line = sp.check_output('acpi', shell=True).decode().split()
+    status = line[2]
+    percent = line[3][:-1]
+    if status == 'Charging,':
+        print('{}'.format(percent))
+    elif status == 'Discharging,':
+        time = line[4].split(':')
+        print('{}({}:{})'.format(percent, time[0], time[1]))
+    else:
+        print('???')
+except Exception as e:
+    print('???')

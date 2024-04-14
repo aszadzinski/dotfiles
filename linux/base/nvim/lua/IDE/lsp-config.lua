@@ -9,6 +9,9 @@ require("mason-lspconfig").setup({
 			"cmake",
 			"tailwindcss",
 			"html",
+			"clangd",
+			"lua_ls",
+			"ltex",
 	}
 })
 
@@ -73,24 +76,12 @@ require("lspconfig")["tailwindcss"].setup(coq.lsp_ensure_capabilities({
 		on_attach = lsp_keymaps,
 }))
 
-if jit.arch ~= "arm64" then
-		require("mason-lspconfig").setup({
-			ensure_installed = {
-					"clangd",
-					"lua_ls",
-					"ltex",
-			}
-		})
-		require("lspconfig")["clangd"].setup(coq.lsp_ensure_capabilities({
-				on_attach = lsp_keymaps,
-		}))
-		require("lspconfig")["ltex"].setup(coq.lsp_ensure_capabilities({
-				on_attach = lsp_keymaps,
-		}))
-		require("lspconfig")["lua_ls"].setup(coq.lsp_ensure_capabilities({
-				on_attach = lsp_keymaps,
-		}))
-else
-		print("Can't install some LSP packages. Unsupported system architecture")
-end
-
+require("lspconfig")["clangd"].setup(coq.lsp_ensure_capabilities({
+		on_attach = lsp_keymaps,
+}))
+require("lspconfig")["ltex"].setup(coq.lsp_ensure_capabilities({
+		on_attach = lsp_keymaps,
+}))
+require("lspconfig")["lua_ls"].setup(coq.lsp_ensure_capabilities({
+		on_attach = lsp_keymaps,
+}))

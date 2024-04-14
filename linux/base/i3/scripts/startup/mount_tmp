@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Mounting external HDD..."
+echo "==========================="
+mount UUID=FD8C-0916 /mnt 
+echo "Unencrypting..."
+cryptsetup luksOpen --key-file $(cat ~/.tmpkey) /dev/disk/by-uuid/$(cat ~/.tmpdevice) Sapporo 
+umount /mnt
+echo "Mounting..."
+mount /dev/mapper/Sapporo /data
+echo "==========================="
+
+
+
