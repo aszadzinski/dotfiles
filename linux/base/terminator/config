@@ -9,7 +9,7 @@
   [[default]]
     background_color = "#201f25"
     background_darkness = 0.97
-    font = DejaVu Sans Mono Bold 10
+    font = Source Code Pro Medium Italic 10
     foreground_color = "#babdb6"
     show_titlebar = False
     scrollbar_position = hidden

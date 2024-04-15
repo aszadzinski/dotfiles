@@ -195,6 +195,7 @@ bindsym $mod+Shift+p exec poweroff
 bindsym $mod+Ctrl+m exec ~/.config/i3/scripts/lock
 
 bindsym Print exec scrot  -e 'mv $f ~/Pictures/Screenshots'
+bindsym XF86Tools exec scrot  -e 'mv $f ~/Pictures/Screenshots'
 
 bindsym $mod+Shift+plus  exec amixer set Master -q 5%+
 bindsym $mod+Shift+minus exec amixer set Master -q 5%-
@@ -203,8 +204,8 @@ bindsym XF86AudioLowerVolume exec amixer set Master -q 5%-
 bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
-bindsym $mod+Ctrl+plus  exec ~/.config/i3/scripts/brightness_switch --on
-bindsym $mod+Ctrl+minus  exec ~/.config/i3/scripts/brightness_switch --off
+bindsym $mod+Ctrl+plus  exec xbacklight -inc 20 # increase screen brightness
+bindsym $mod+Ctrl+minus  exec xbacklight -dec 20 # decrease screen brightness
 #bindsym $mod+Ctrl+plus  exec xbacklight -inc 20 # increase screen brightness
 #bindsym $mod+Ctrl+minus exec xbacklight -dec 20 # decrease screen brightness
 
@@ -238,12 +239,15 @@ exec pacmd update-sink-proplist Snapcast device.description=Snapcast
 ### Screen Setup ###
 ####################
 
+exec_always xset s on
+exec_always xset s 2700 2700
+
 #exec picom --experimental-backends
 exec pasystray
 exec blueman-applet
 exec /usr/lib/notification-daemon-1.0/notification-daemon 
 
-exec xautolock -time 30 -locker ~/.config/i3/scripts/lock
+exec xautolock -time 47 -locker "i3lock -B=sigma"
 exec xinput set-prop 15 389 1
 exec xinput set-prop 15 307 1
 exec redshift -l 55.7:12.6 -t 6500:4300
