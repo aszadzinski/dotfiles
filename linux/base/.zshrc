@@ -84,6 +84,24 @@ alias tmux_return="tmux attach-session"
 # Functions #
 #############
 
+function rgr()
+{
+	if ps | grep ranger > /dev/null
+	then
+		echo "ranger is working in background."
+		echo "Leaving session. Abort [y/N]"
+		read choice
+		if [[ $choice = "y" ]] || [[ $choice = "Y" ]]
+		then
+			echo ":3"
+		else
+			exit
+		fi
+	else
+		ranger
+	fi
+}
+
 
 function weather()
 {
