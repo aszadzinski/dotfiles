@@ -28,15 +28,13 @@ xset b off
 #############
 
 export PATH=$PATH:$HOME/.local/bin
-
-#source ~/Programs/root-6.20.04/build/bin/thisroot.sh
+ranger_path=$(whereis ranger | cut -d " " -f 2)
 
 ###########
 # ALIASES #
 ###########
 
 alias tmux="TERM=screen-256color-bce tmux"
-ranger_path=$(whereis ranger | cut -d " " -f 2)
 alias ranger="echo 'Deprecated.  Use rgr instead :)'"
 
 # Text edit
@@ -91,11 +89,14 @@ function rgr()
 	if ps | grep ranger > /dev/null
 	then
 		echo "ranger is working in background."
-		echo "Leaving session. Abort [y/N]"
+		echo "Leaving session. Abort or overide? [y/N/o]"
 		read choice
 		if [[ $choice = "y" ]] || [[ $choice = "Y" ]]
 		then
 			echo ":3"
+		elif [[ $choice = "o" ]] || [[ $choice = "O" ]]
+		then
+			"$ranger_path"
 		else
 			exit
 		fi
@@ -109,15 +110,15 @@ function weather()
 {
 	chose=$1
 	loc=$2
-	if [ $1 = "-v2" ]
+	if [[ $1 = "-v2" ]]
 	then
 		curl "wttr.in/$2?format=v2" 
 	fi
-	if [ $1 = "-v0" ]
+	if [[ $1 = "-v0" ]]
 	then
 		curl "wttr.in/$2?0" 
 	fi
-	if [ $1 = "-v1" ]
+	if [[ $1 = "-v1" ]]
 	then
 		curl "wttr.in/$2"
 	fi	
@@ -128,7 +129,7 @@ function ggit()
 	git status
 	git add --all
 	sleep 3
-	if [ $1 = "-S" ] 
+	if [[ $1 = "-S" ]] 
 	then
 		echo "1"
 		git commit -S -m "$2"
@@ -171,7 +172,7 @@ function pip-upload()
 
 function markdown-gen()
 {
-	if [ $1 = "-h" ] 
+	if [[ $1 = "-h" ]] 
 	then
 		echo "markdown-gen <name> <version>"
 		echo "optional -k: stop after deleting files"
@@ -196,7 +197,7 @@ def setup(app): app.connect('autodoc-skip-member', skip)
 " >> conf.py;
 		make markdown
 		cd ..
-		if [ $3 = "-k" ]
+		if [[ $3 = "-k" ]]
 		then
 			echo "paused..."
 		else
