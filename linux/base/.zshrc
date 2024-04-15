@@ -36,6 +36,8 @@ export PATH=$PATH:$HOME/.local/bin
 ###########
 
 alias tmux="TERM=screen-256color-bce tmux"
+ranger_path=$(whereis ranger | cut -d " " -f 2)
+alias ranger="echo 'Deprecated.  Use rgr instead :)'"
 
 # Text edit
 alias plaspell="aspell -c -t --lang=pl"
@@ -98,7 +100,7 @@ function rgr()
 			exit
 		fi
 	else
-		ranger
+		"$ranger_path"
 	fi
 }
 
