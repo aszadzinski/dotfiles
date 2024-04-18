@@ -34,6 +34,10 @@ require("lspconfig")["pylsp"].setup(coq.lsp_ensure_capabilities({
 							enabled = true,
 							ignore = {
 									'D100',
+									'D101',
+									'D102',
+									'D103',
+									'D107',
 									'D203',
 									'D213',
 							},
