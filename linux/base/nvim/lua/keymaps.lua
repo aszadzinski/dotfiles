@@ -6,6 +6,7 @@ local opts = { noremap = true, silent = true }
 -- ####################################################
 vim.api.nvim_set_keymap("n", "<C-n>", ":Neotree<cr>", opts)
 vim.keymap.set("n", "<C-f>", ":%s/")
+vim.keymap.set("n", "<C-s>", ":AsyncRun ")
 
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
@@ -48,12 +49,13 @@ end, { expr = true, desc = "previous hunk" })
 -- ####################################################
 -- Telescope
 -- ####################################################
-vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
+vim.keymap.set('n', '<leader>?', function()
+		require('telescope.builtin').live_grep()
+end, { desc = '[/] Fuzzily search in current buffer' })
 vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
 vim.keymap.set('n', '<leader>/', function()
 		require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
-				winblend = 10,
-				previewer = false,
+				-- previewer = false,
 		})
 end, { desc = '[/] Fuzzily search in current buffer' })
 vim.keymap.set('n', '<leader>sf', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })

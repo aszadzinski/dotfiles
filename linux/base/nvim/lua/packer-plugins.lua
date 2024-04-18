@@ -2,6 +2,7 @@ return require("packer").startup(function()
 		-- tools
 		use "lewis6991/impatient.nvim"
 		use "wbthomason/packer.nvim"
+		use "https://github.com/pappasam/nvim-repl"
 
 		-- Looks
 		use "nvim-tree/nvim-web-devicons"
@@ -10,10 +11,6 @@ return require("packer").startup(function()
 		use "MunifTanjim/nui.nvim"
 		use {
 				"nvim-treesitter/nvim-treesitter",
-				run = function()
-						local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
-						ts_update()
-				end,
 		}
 		use {
 				  "nvim-lualine/lualine.nvim",
