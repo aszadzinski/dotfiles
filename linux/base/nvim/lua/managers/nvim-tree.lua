@@ -74,28 +74,6 @@ neo_tree.setup({
 		enabled = true,
 	},
   },
-  event_handlers = {
-    {
-      event = "vim_buffer_enter",
-      handler = function(_)
-        if vim.bo.filetype == "neo-tree" then
-          vim.wo.signcolumn = "auto"
-        end
-      end,
-    },
-    {
-      event = "file_opened",
-      handler = function(file_path)
-        require("neo-tree").focus()
-      end
-    },
-    -- {
-    --   event = "vim_win_enter",
-    --   handler = function(file_path)
-    --     require("neo-tree").close_all()
-    --   end
-    -- }
-  },
 })
 
 vim.cmd([[

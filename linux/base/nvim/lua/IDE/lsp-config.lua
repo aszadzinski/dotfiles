@@ -12,6 +12,9 @@ require("mason-lspconfig").setup({
 			"cmake",
 			"tailwindcss",
 			"html",
+			"clangd",
+			"lua_ls",
+			"ltex",
 	}
 })
 
@@ -90,4 +93,3 @@ require("lspconfig")["ltex"].setup(coq.lsp_ensure_capabilities({
 require("lspconfig")["lua_ls"].setup(coq.lsp_ensure_capabilities({
 		on_attach = lsp_keymaps,
 }))
-
