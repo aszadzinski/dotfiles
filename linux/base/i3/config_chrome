@@ -228,6 +228,7 @@ exec localedef -i en_US -f UTF-8 en_US.UTF-8
 exec nm-applet
 exec ~/.config/i3/scripts/startup/mounts
 exec syncthing --no-browser
+exec xfce4-power-manager
 
 
 exec snapserver
