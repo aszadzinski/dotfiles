@@ -44,6 +44,7 @@ return require("packer").startup(function()
 				requires = {
 						"neovim/nvim-lspconfig",
 						"williamboman/mason-lspconfig.nvim",
+						"mfussenegger/nvim-lint",
 						"j-hui/fidget.nvim",
 				},
 		}
