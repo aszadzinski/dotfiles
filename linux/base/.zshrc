@@ -34,6 +34,7 @@ ranger_path=$(whereis ranger | cut -d " " -f 2)
 # ALIASES #
 ###########
 
+alias lsb="lsblk --output NAME,LABEL,SIZE,FSUSE%,FSTYPE,MOUNTPOINT"
 alias tmux="TERM=screen-256color-bce tmux"
 alias ranger="echo 'Deprecated.  Use rgr instead :)'"
 
