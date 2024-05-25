@@ -8,10 +8,17 @@
 export ZSH="$HOME/.oh-my-zsh"
 plugins=(
   git
+  poetry
 	)
 export VISUAL=nvim;
 export EDITOR=nvim;
 alias vim="nvim"
+
+# Setup pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$HOME/.pyenv:$PATH"
+eval "$(pyenv init -)"
 
 #################
 # Configuration #
@@ -210,4 +217,6 @@ def setup(app): app.connect('autodoc-skip-member', skip)
 
 	fi
 }
+
+
 
